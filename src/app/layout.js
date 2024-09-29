@@ -10,16 +10,16 @@ import '@/assets/css/rc-drawer.css';
 import '@/assets/css/themes.scss';
 import '@/assets/css/google-font.css';
 import './globals.css';
+import Link from 'next/link';
 
 
-
-import { QueryClient, QueryClientProvider } from 'react-query';
+//import { QueryClient, QueryClientProvider } from 'react-query';
 import { Provider } from 'react-redux';
 import { store } from '@/store';
 
 
 
-const queryClient = new QueryClient();
+//const queryClient = new QueryClient();
 
 export default function RootLayout({ children }) {
   return (
@@ -152,7 +152,7 @@ export default function RootLayout({ children }) {
               </svg>
             </button>
           </div>
-          <a
+          <Link
             lang="en"
             className="inline-flex focus:outline-none  logo ps-3 md:ps-0 lg:mx-0"
             href="/"
@@ -167,7 +167,7 @@ export default function RootLayout({ children }) {
               style={{ color: "transparent" }}
               src="/logo.cfe79157.svg"
             />
-          </a>
+          </Link>
           <div className="w-full transition-all duration-200 ease-in-out hidden lg:flex lg:max-w-[450px] xl:max-w-[500px] 2xl:max-w-[800px] lg:mx-10">
             <div className="overlay cursor-pointer invisible w-full h-full opacity-0 flex top-0 ltr:left-0 rtl:right-0 transition-all duration-300 fixed" />
             <div className="relative z-30 flex flex-col justify-center w-full shrink-0">
@@ -1457,11 +1457,10 @@ export default function RootLayout({ children }) {
 
 
 
-        <QueryClientProvider client={queryClient}>
           <Provider store={store}>
             {children}
           </Provider>
-        </QueryClientProvider>
+
 
 
 
