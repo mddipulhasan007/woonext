@@ -23,7 +23,7 @@ export default function HomeClient({ products }) {
           <HotDeals />
           <BestProducts />
           <GetDiscount />
-          <CategoryTab />
+          {/*<CategoryTab />*/}
           <OfferProducts />
           <PopularProducts />
           <HomeBlogs />
