@@ -1,6 +1,7 @@
 import React from 'react';
 import DealBanner from "@/components/ui/DealBanner";
 import HotProductCarousel from "@/components/ui/HotDealProductCarousel";
+import Image from "next/image";
 
 function HotDeals() {
     return (
@@ -18,7 +19,7 @@ function HotDeals() {
                                 version="1.1"
                             />
                         </div>
-                        <img
+                        <Image
                             alt="Product Image"
                             loading="lazy"
                             width={0}
@@ -28,7 +29,7 @@ function HotDeals() {
                             className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"
                             style={{color: "transparent"}}
                             sizes="100vw"
-                            src="/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fhome1%2Fhotdeals.png&w=3840&q=75"
+                            src="/assets/images/banner/home1/hotdeals.png"
                         />
                     </div>
                 </div>

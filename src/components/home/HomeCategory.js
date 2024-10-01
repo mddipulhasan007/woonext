@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Link from 'next/link';
 import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons'; // Import custom icons
+import Image from "next/image";
+
 
 export default function HomeCategory() {
   const prevRef = useRef(null);
@@ -131,8 +133,10 @@ export default function HomeCategory() {
                                 version="1.1"
                             />
                         </div>
-                        <img
+                        <Image
                           alt={category.alt}
+                          width={0}
+                          height={0}
                           loading="lazy"
                           decoding="async"
                           className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"

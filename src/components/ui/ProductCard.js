@@ -3,6 +3,7 @@ import Rating from "@/components/ui/Rating";
 import ImageHelper from "@/components/ui/ImageHelper";
 import InStock from "@/components/ui/InStock";
 import AddtoCart from "@/components/ui/AddtoCart";
+import Image from "next/image";
 
 function ProductCard({product}) {
     return (
@@ -15,8 +16,10 @@ function ProductCard({product}) {
                     <div
                         className="relative inline-block overflow-hidden mx-auto box-sizing object-cover bg-fill-thumbnail">
                         <ImageHelper />
-                        <img
+                        <Image
                             alt={product.alt}
+                            width={0}
+                            height={0}
                             loading="lazy"
                             decoding="async"
                             className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"

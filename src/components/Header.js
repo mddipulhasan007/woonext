@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -134,7 +135,7 @@ export default function Header() {
               className="inline-flex focus:outline-none  logo ps-3 md:ps-0 lg:mx-0"
               href="/"
             >
-              <img
+              <Image
                 alt="Razazoror"
                 loading="eager"
                 width={142}
@@ -260,7 +261,7 @@ export default function Header() {
               className="inline-flex focus:outline-none  navbar-logo w-0 opacity-0 transition-all duration-200 ease-in-out"
               href="/en"
             >
-              <img
+              <Image
                 alt="Razazoror"
                 loading="eager"
                 width={142}
@@ -395,7 +396,7 @@ export default function Header() {
                                     version="1.1"
                                   />
                                 </div>
-                                <img
+                                <Image
                                   alt="menu-fresh-vegetables"
                                   loading="lazy"
                                   width={0}
@@ -470,7 +471,7 @@ export default function Header() {
                                     version="1.1"
                                   />
                                 </div>
-                                <img
+                                <Image
                                   alt="menu-diet-nutrition"
                                   loading="lazy"
                                   width={0}
@@ -545,7 +546,7 @@ export default function Header() {
                                     version="1.1"
                                   />
                                 </div>
-                                <img
+                                <Image
                                   alt="menu-healthy-foods"
                                   loading="lazy"
                                   width={0}
@@ -620,7 +621,7 @@ export default function Header() {
                                     version="1.1"
                                   />
                                 </div>
-                                <img
+                                <Image
                                   alt="menu-grocery-items"
                                   loading="lazy"
                                   width={0}
@@ -695,7 +696,7 @@ export default function Header() {
                                     version="1.1"
                                   />
                                 </div>
-                                <img
+                                <Image
                                   alt="menu-beaf-steak"
                                   loading="lazy"
                                   width={0}
@@ -1066,7 +1067,7 @@ export default function Header() {
                                   version="1.1"
                                 />
                               </div>
-                              <img
+                              <Image
                                 alt="Product Image"
                                 loading="lazy"
                                 width={0}

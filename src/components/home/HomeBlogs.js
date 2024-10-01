@@ -3,6 +3,7 @@ import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
+import Image from "next/image";
 
 export default function HomeBlogs() {
     const prevRef = useRef(null);
@@ -135,8 +136,10 @@ export default function HomeBlogs() {
                                             <svg className="block max-w-full h-auto" xmlns="http://www.w3.org/2000/svg"
                                                  width={440} height={280} version="1.1"/>
                                         </div>
-                                        <img
+                                        <Image
                                             alt={post.title}
+                                            width={0}
+                                            height={0}
                                             loading="lazy"
                                             decoding="async"
                                             className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"

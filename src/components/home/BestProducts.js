@@ -102,17 +102,6 @@ export default function BestProductsCarousel() {
             isInStock: true,
             isOnSale: false,
         },
-        {
-            href: '#',
-            src: '/assets/images/products/p-16.jpg',
-            alt: 'Wireless Bluetooth Speaker with HD Sound',
-            title: 'Wireless Bluetooth Speaker with HD Sound',
-            price: '$75.00',
-            originalPrice: '$100.00',
-            sold: '400 products',
-            isInStock: false,
-            isOnSale: true,
-        },
     ];
 
 

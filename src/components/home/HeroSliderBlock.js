@@ -4,6 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import { useRef, useEffect } from 'react';
 import HomeCategory from './HomeCategory';
 import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
+import Image from "next/image";
 
 export default function HeroSliderBlock() {
   const prevRef = useRef(null);
@@ -45,12 +46,12 @@ export default function HeroSliderBlock() {
   // Banner data array
   const banners = [
     {
-      imgSrc: '/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fhome1%2Fslider-1.png&w=3840&q=75',
+      imgSrc: '/assets/images/banner/home1/slider-1.png',
       alt: 'Free delivery from your store',
       href: '/en/search',
     },
     {
-      imgSrc: '/_next/image?url=%2Fassets%2Fimages%2Fbanner%2Fhome1%2Fslider-2.png&w=3840&q=75',
+      imgSrc: '/assets/images/banner/home1/slider-2.png',
       alt: 'Fresh Healthy Breakfast food',
       href: '/en/search',
     },
@@ -133,7 +134,7 @@ export default function HeroSliderBlock() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt={banner.alt}
                       loading="lazy"
                       width={0}

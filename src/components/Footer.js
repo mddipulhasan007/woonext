@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -183,7 +184,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="facebook"
                       loading="lazy"
                       width={0}
@@ -209,7 +210,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="twitter"
                       loading="lazy"
                       width={0}
@@ -239,7 +240,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="instagram"
                       loading="lazy"
                       width={0}
@@ -269,7 +270,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="youtube"
                       loading="lazy"
                       width={0}
@@ -538,7 +539,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="Master Card"
                       loading="lazy"
                       width={0}
@@ -569,7 +570,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="Visa"
                       loading="lazy"
                       width={0}
@@ -600,7 +601,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="Paypal"
                       loading="lazy"
                       width={0}
@@ -631,7 +632,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="payment-discover"
                       loading="lazy"
                       width={0}
@@ -662,7 +663,7 @@ export default function Footer() {
                         version="1.1"
                       />
                     </div>
-                    <img
+                    <Image
                       alt="payment-american"
                       loading="lazy"
                       width={0}
