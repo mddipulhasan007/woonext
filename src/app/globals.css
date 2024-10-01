@@ -417,6 +417,12 @@ input:checked + .slider:before {
   @apply text-[#F3B81F];
 }
 
+.category-listing-tab .swiper-slide {
+  max-width: 221.66px; /* Set a specific width */
+  box-sizing: border-box;
+  margin-right: 10px;
+}
+
 /* antique banner  */
 @media (max-width: 768px) {
   .antique-banner {
@@ -431,3 +437,5 @@ input[type='search']::-webkit-search-results-button,
 input[type='search']::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
+
+

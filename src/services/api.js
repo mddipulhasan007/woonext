@@ -2,6 +2,7 @@ import axiosInstance from './axios'; // Adjust the import path as necessary
 
 export const fetchProducts = async () => {
   const response = await axiosInstance.get('/products');
+  console.log('fetch products');
   return response.data;
 };
 

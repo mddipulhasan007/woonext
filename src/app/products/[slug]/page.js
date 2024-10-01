@@ -27,4 +27,4 @@ export default async function ProductPage({ params }) {
   );
 }
 
-export const revalidate = 300; // Revalidate data every 5 minutes
+export const revalidate = 3000000000; // Revalidate data every 5 minutes
