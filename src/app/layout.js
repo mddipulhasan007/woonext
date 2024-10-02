@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <Header />
-          <main class="relative flex-grow pt-5 xl:pt-8 ">{children}</main>
+          <main className="relative flex-grow pt-5 xl:pt-8 ">{children}</main>
           <Footer />
         </Provider>
       </body>
