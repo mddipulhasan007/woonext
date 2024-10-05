@@ -8,7 +8,8 @@ import TopBar from '@/components/ui/header/TopBar';
 import MiddleMenu from '@/components/ui/header/MiddleMenu';
 import MainMenu from '@/components/ui/header/MainMenu';
 
-export default function Header() {
+
+export default function Header({mobileMenuToggle, isSearchVisible, toggleSearch, SearchRef}) {
     const [isScrolling, setIsScrolling] = useState(false);
     const mainMenuRef = useRef(null);
 
@@ -44,14 +45,6 @@ export default function Header() {
         setIsStickySearchVisible((prev) => !prev);
     };
 
-    //middle menu search overlay
-    const [isSearchVisible, setIsSearchVisible] = useState(false);
-    const SearchRef = useRef(null);
-
-    // Toggle visibility when the button is clicked
-    const toggleSearch = () => {
-        setIsSearchVisible((prev) => !prev);
-    };
 
 
     // State to manage the visibility of the dropdown
@@ -63,18 +56,20 @@ export default function Header() {
     };
 
 
+
+
     return (
         <>
             <header
                 id="siteHeader"
-                className={`header-one sticky-header sticky top-0 z-50 lg:relative w-full ${
+                className={`header-one sticky-header sticky top-0 z-50 lg:relative w-full active-mobile-search ${
                     isScrolling ? 'is-scrolling' : ''
                 }`}
             >
                 <div className="innerSticky z-20 w-full transition duration-200 ease-in-out body-font bg-white">
-                    <MobileSearch/>
+                    <MobileSearch isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef} />
                     <TopBar/>
-                    <MiddleMenu isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef}/>
+                    <MiddleMenu isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef} mobileMenuToggle={mobileMenuToggle}/>
                     <div ref={mainMenuRef}>
                     <MainMenu isScrolling={isScrolling} isVisible={isStickySearchVisible}
                                   toggleStickySearch={toggleStickySearch} stickySearchRef={stickySearchRef} categoryToggleDropdown={categoryToggleDropdown} isCategoryDropdownVisible={isCategoryDropdownVisible}/>

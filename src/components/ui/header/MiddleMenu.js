@@ -4,13 +4,14 @@ import Image from "next/image";
 import MenuAccountCart from "@/components/ui/header/MenuAccountCart";
 import SearchInput from "@/components/ui/header/SearchInput";
 
-function MiddleMenu({isVisible, toggleSearch,SearchRef}) {
+function MiddleMenu({isVisible, toggleSearch,SearchRef, mobileMenuToggle}) {
     return (
         <div className="border-b border-black/10">
             <div className="mx-auto max-w-[1380px] px-4 md:px-6 3xl:px-0">
                 <div className="flex items-center justify-between  py-2 md:py-4">
                     <div className="relative flex-shrink-0 lg:hidden">
                         <button
+                            onClick={mobileMenuToggle}
                             aria-label="Menu"
                             className="bg-brand rounded focus:outline-none flex-shrink-0 text-sm  text-skin-inverted px-2.5 md:px-3 lg:px-[18px] py-2 md:py-2.5 lg:py-3 flex items-center transition-all hover:border-skin-four"
                         >

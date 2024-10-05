@@ -7,10 +7,7 @@ import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
 import ProductCard from "@/components/ui/ProductCard";
 
 
-
-
-
-export default function BestProductsCarousel() {
+export default function RelatedProducts() {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -117,7 +114,7 @@ export default function BestProductsCarousel() {
         <div className="heightFull relative mb-8 lg:mb-15">
             <div className=" py-3 uppercase mb-1.5 rounded bg-white px-5">
                 <h3 className="text-fill-base text-[16px] lg:leading-7 font-bold">
-                    <div>Best Products</div>
+                    <div>Related Products</div>
                 </h3>
             </div>
             <div className="heightFull">
@@ -159,6 +156,6 @@ export default function BestProductsCarousel() {
                 </div>
             </div>
         </div>
-)
-    ;
+    )
+        ;
 }

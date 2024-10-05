@@ -1,34 +1,26 @@
 import React from 'react';
+import SearchResult from "@/components/ui/header/SearchResult";
+import SearchInput from "@/components/ui/header/SearchInput";
 
-function MobileSearch(props) {
+function MobileSearch({isVisible,toggleSearch}) {
     return (
         <div
             className="w-full transition-all duration-200 ease-in-out top-bar-search hidden lg:max-w-[600px] absolute z-30 px-4 md:px-6 top-12 xl:top-1">
             <div
-                className="overlay cursor-pointer invisible w-full h-full opacity-0 flex top-0 ltr:left-0 rtl:right-0 transition-all duration-300 fixed"/>
-            <div className="relative z-30 flex flex-col justify-center w-full shrink-0">
-                <div className="flex flex-col w-full mx-auto">
-                    <form
-                        className="relative flex w-full rounded-md"
-                        noValidate=""
-                        role="search"
-                    >
-                        <label
-                            htmlFor="mobile-search"
-                            className="flex flex-1 items-center py-0.5"
-                        >
-                            <input
-                                id="mobile-search"
-                                className="text-heading outline-none w-full h-[45px] ltr:pl-5 rtl:pr-5 md:ltr:pl-6 md:rtl:pr-6 ltr:pr-14 rtl:pl-14 md:ltr:pr-16 md:rtl:pl-16 bg-brand-light text-brand-dark text-sm rounded transition-all duration-200 focus:border-brand focus:ring-0 placeholder:text-brand-dark/50 border-2 border-black/10"
-                                placeholder="Search the store"
-                                aria-label="mobile-search"
-                                autoComplete="off"
-                                name="search"
-                                defaultValue=""
-                            />
-                        </label>
-                        <span
-                            className="absolute top-0 flex items-center justify-center h-full w-14 md:w-16 ltr:right-0 rtl:left-0 shrink-0 focus:outline-none">
+                onClick={toggleSearch}
+                className={`overlay cursor-pointer invisible w-full h-full opacity-0 flex top-0 ltr:left-0 rtl:right-0 transition-all duration-300 fixed ${isVisible?'open':''}`}/>
+            {
+                isVisible && (
+                    <div className="relative z-30 flex flex-col justify-center w-full shrink-0  lg:hidden">
+                        <div className="flex flex-col w-full mx-auto">
+                            <form
+                                className="relative flex w-full rounded-md"
+                                noValidate=""
+                                role="search"
+                            >
+                                <SearchInput/>
+                                <span
+                                    className="absolute top-0 flex items-center justify-center h-full w-14 md:w-16 ltr:right-0 rtl:left-0 shrink-0 focus:outline-none">
                 <svg
                     width={20}
                     height={20}
@@ -42,9 +34,13 @@ function MobileSearch(props) {
                   />
                 </svg>
               </span>
-                    </form>
-                </div>
-            </div>
+                            </form>
+                        </div>
+                        <SearchResult/>
+                    </div>
+                )
+            }
+
         </div>
     );
 }
