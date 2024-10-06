@@ -9,7 +9,7 @@ import 'react-medium-image-zoom/dist/styles.css';
 
 function MainGallery({ swiperRef, thumbsSwiper, images, prevRef, nextRef }) {
     return (
-        <div className="w-full xl:ltr:ml-5 xl:rtl:mr-5 overflow-hidden rounded-md relative xl:w-[500px]">
+        <div className="w-full overflow-hidden rounded-md relative mx-auto ">
             <Swiper
                 ref={swiperRef}
                 loop={true}
@@ -31,7 +31,7 @@ function MainGallery({ swiperRef, thumbsSwiper, images, prevRef, nextRef }) {
             >
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative inline-block overflow-hidden mx-auto rounded-lg">
+                        <div className="relative overflow-hidden mx-auto rounded-lg flex justify-center">
                             <Zoom>
                                 <Image
                                     alt={image.alt}

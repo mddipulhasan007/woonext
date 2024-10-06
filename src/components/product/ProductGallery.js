@@ -38,6 +38,15 @@ const images = [
         alt: 'Product gallery 3',
         src: '/assets/images/products/p-3-3.jpg',
         sizes: '100vw',
+    },    {
+        alt: 'Product gallery 1',
+        src: '/assets/images/products/p-3-1.jpg',
+        sizes: '100vw',
+    },
+    {
+        alt: 'Product gallery 3',
+        src: '/assets/images/products/p-3-3.jpg',
+        sizes: '100vw',
     },
     // Add more images as needed
 ];
@@ -68,7 +77,7 @@ const ProductGallery = () => {
 
     return (
         <div className="col-span-5 mb-6 overflow-hidden md:mb-8 lg:mb-0">
-            <div className="w-full xl:flex xl:flex-row-reverse relative">
+            <div className="w-full xl:flex relative flex-col">
                 {/*<GalleryPreview />*/}
                 <MainGallery swiperRef={swiperRef} thumbsSwiper={thumbsSwiper } images={images} prevRef={prevRef} nextRef={nextRef}/>
                 <GalleryThumbnails images={images} setThumbsSwiper={setThumbsSwiper} />
