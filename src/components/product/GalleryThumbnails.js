@@ -48,8 +48,8 @@ export default function GalleryThumbnails({ images, setThumbsSwiper }) {
                                 alt={`Product thumb gallery ${index + 1}`}
                                 src={image.src}
                                 sizes={image.sizes}
-                                width={100}
-                                height={100}
+                                width={80}
+                                height={80}
                                 loading="lazy"
                                 className="object-cover"
                             />
