@@ -39,7 +39,7 @@ function MainGallery({ swiperRef, thumbsSwiper, images, prevRef, nextRef }) {
                                     sizes={image.sizes}
                                     width={500}
                                     height={500}
-                                    loading="eager"
+                                    loading={index === 0 ? "eager" : "lazy"}
                                     className="object-cover"
                                 />
                             </Zoom>
