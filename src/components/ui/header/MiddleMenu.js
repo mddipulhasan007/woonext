@@ -4,7 +4,7 @@ import Image from "next/image";
 import MenuAccountCart from "@/components/ui/header/MenuAccountCart";
 import SearchInput from "@/components/ui/header/SearchInput";
 
-function MiddleMenu({isVisible, toggleSearch,SearchRef, mobileMenuToggle}) {
+function MiddleMenu({isVisible, toggleSearch,SearchRef, mobileMenuToggle, toggleDrawerCart}) {
     return (
         <div className="border-b border-black/10">
             <div className="mx-auto max-w-[1380px] px-4 md:px-6 3xl:px-0">
@@ -76,7 +76,7 @@ function MiddleMenu({isVisible, toggleSearch,SearchRef, mobileMenuToggle}) {
 
                             <SearchInput toggleSearch={toggleSearch}/>
                         </div>
-                        <MenuAccountCart/>
+                        <MenuAccountCart toggleDrawerCart={toggleDrawerCart}/>
                     </div>
                 </div>
             </div>

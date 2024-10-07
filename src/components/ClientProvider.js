@@ -8,6 +8,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileMenuDrawer from "@/components/MobileMenuDrawer";
 import FooterStickyMenu from "@/components/ui/FooterStickyMenu";
+import DrawerCart from "@/components/DrawerCart";
 
 export default function ClientProvider({ children }) {
     // Mobile menu toggle
@@ -27,6 +28,15 @@ export default function ClientProvider({ children }) {
         setIsSearchVisible((prev) => !prev);
     };
 
+
+    // Middle menu search overlay
+    const [drawerCartVisible, setDrawerCardVisible] = useState(false);
+    // Toggle visibility when the button is clicked
+    const toggleDrawerCart = () => {
+        setDrawerCardVisible((prev) => !prev);
+    };
+
+
     return (
         <Provider store={store}>
             <div className="flex flex-col min-h-screen">
@@ -35,6 +45,7 @@ export default function ClientProvider({ children }) {
                     isSearchVisible={isSearchVisible}
                     toggleSearch={toggleSearch}
                     SearchRef={SearchRef}
+                    toggleDrawerCart={toggleDrawerCart}
                 />
                 {children}
                 <Footer />
@@ -42,6 +53,7 @@ export default function ClientProvider({ children }) {
                     mobileMenuToggle={mobileMenuToggle}
                     toggleSearch={toggleSearch}
                 />
+                <DrawerCart toggleDrawerCart={toggleDrawerCart} drawerCartVisible={drawerCartVisible}  />
                 {isMobileMenuVisible && (
                     <MobileMenuDrawer mobileMenuToggle={mobileMenuToggle} />
                 )}

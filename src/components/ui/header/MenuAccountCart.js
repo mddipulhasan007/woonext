@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MenuAccountCart(props) {
+function MenuAccountCart({toggleDrawerCart}) {
     return (
         <div className="text-brand-icon-header flex text-sm space-x-5 xl:space-x-10 lg:max-w-[33%]">
             <div className="hidden lg:flex items-center shrink-0 accountButton">
@@ -31,6 +31,7 @@ function MenuAccountCart(props) {
                 </button>
             </div>
             <button
+                onClick={toggleDrawerCart}
                 className="flex items-center justify-center shrink-0 h-auto focus:outline-none transform hidden lg:flex"
                 aria-label="cart-button"
             >
