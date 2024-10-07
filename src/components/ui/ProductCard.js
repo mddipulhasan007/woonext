@@ -4,6 +4,7 @@ import ImageHelper from "@/components/ui/ImageHelper";
 import InStock from "@/components/ui/InStock";
 import AddtoCart from "@/components/ui/AddtoCart";
 import Image from "next/image";
+import Link from "next/link";
 
 function ProductCard({product}) {
     return (
@@ -17,7 +18,7 @@ function ProductCard({product}) {
                         className="relative inline-block overflow-hidden mx-auto box-sizing object-cover bg-fill-thumbnail">
                         <ImageHelper />
                         <Image
-                            alt={product.alt}
+                            alt={product.title}
                             width={0}
                             height={0}
                             loading="lazy"
@@ -39,12 +40,12 @@ function ProductCard({product}) {
                 )}
             </div>
             <div className="flex flex-col h-full overflow-hidden relative product-cart-content">
-                <a
+                <Link
                     className="text-skin-base font-semibold text-sm leading-5 min-h-[40px] line-clamp-2 mb-2 hover:text-brand"
-                    href={product.href}
+                    href={'/products/product'}
                 >
                     {product.title}
-                </a>
+                </Link>
 
                 <Rating/>
 
