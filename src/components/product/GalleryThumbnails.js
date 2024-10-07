@@ -55,7 +55,8 @@ export default function GalleryThumbnails({ images, setThumbsSwiper }) {
                                 sizes={image.sizes}
                                 width={80}
                                 height={80}
-                                loading={index === 0 || index === 1 ? "eager" : "lazy"}
+                           //     loading={index === 0 || index === 1 ? "eager" : "lazy"}
+                                loading={"lazy"}
                                 className="object-cover"
                             />
                         </div>
