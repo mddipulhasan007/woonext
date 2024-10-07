@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Thumbs } from "swiper/modules";
 import Image from "next/image";
@@ -7,6 +7,19 @@ import SwiperNavigation from "@/components/ui/SwiperNavigation";
 export default function GalleryThumbnails({ images, setThumbsSwiper }) {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
+    const swiperRef = useRef(null);
+
+    useEffect(() => {
+        if (swiperRef.current && swiperRef.current.params) {
+            swiperRef.current.params.navigation.prevEl = prevRef.current;
+            swiperRef.current.params.navigation.nextEl = nextRef.current;
+
+            if (swiperRef.current.navigation) {
+                swiperRef.current.navigation.init();
+                swiperRef.current.navigation.update();
+            }
+        }
+    }, [swiperRef, prevRef, nextRef]);
 
     return (
         <div className="py-5 shrink-0 relative">
@@ -19,15 +32,7 @@ export default function GalleryThumbnails({ images, setThumbsSwiper }) {
                 style={{ marginLeft: '60px', marginRight: '60px' }}
                 onSwiper={(swiper) => {
                     setThumbsSwiper(swiper);
-                    if (prevRef.current && nextRef.current) {
-                        swiper.params.navigation.prevEl = prevRef.current;
-                        swiper.params.navigation.nextEl = nextRef.current;
-
-                        if (swiper.navigation) {
-                            swiper.navigation.init();
-                            swiper.navigation.update();
-                        }
-                    }
+                    swiperRef.current = swiper;
                 }}
                 breakpoints={{
                     320: {
