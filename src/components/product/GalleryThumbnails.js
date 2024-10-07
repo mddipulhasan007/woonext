@@ -42,7 +42,7 @@ export default function GalleryThumbnails({ images, setThumbsSwiper }) {
                 }}
             >
                 {images.map((image, index) => (
-                    <SwiperSlide key={index} style={{ height: '100px' }}> {/* Ensure each slide has a consistent height */}
+                    <SwiperSlide key={index} style={{ height: '82px' }}> {/* Ensure each slide has a consistent height */}
                         <div className="relative inline-block overflow-hidden mx-auto box-sizing rounded border border-border-base transition hover:opacity-75">
                             <Image
                                 alt={`Product thumb gallery ${index + 1}`}
