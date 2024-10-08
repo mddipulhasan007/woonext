@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 
-function FooterStickyMenu({mobileMenuToggle, toggleSearch}) {
+function FooterStickyMenu({mobileMenuToggle, toggleSearch, toggleDrawerCart}) {
     return (
         <div
             className="lg:hidden fixed z-30 -bottom-0.5 flex items-center justify-between shadow-bottomNavigation body-font bg-brand-light w-full h-14 px-4 md:px-6 lg:px-8 text-brand-muted pb-0.5">
@@ -76,6 +76,7 @@ function FooterStickyMenu({mobileMenuToggle, toggleSearch}) {
             <button
                 className="flex items-center justify-center shrink-0 h-auto focus:outline-none transform"
                 aria-label="cart-button"
+                onClick={toggleDrawerCart}
             >
                 <div className="relative flex items-center">
                     <div className="flex items-center relative cart-button">

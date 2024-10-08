@@ -71,7 +71,7 @@ export default function Header({mobileMenuToggle, isSearchVisible, toggleSearch,
                     <TopBar/>
                     <MiddleMenu isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef} mobileMenuToggle={mobileMenuToggle} toggleDrawerCart={toggleDrawerCart} />
                     <div ref={mainMenuRef}>
-                    <MainMenu isScrolling={isScrolling} isVisible={isStickySearchVisible}
+                    <MainMenu toggleDrawerCart={toggleDrawerCart} isScrolling={isScrolling} isVisible={isStickySearchVisible}
                                   toggleStickySearch={toggleStickySearch} stickySearchRef={stickySearchRef} categoryToggleDropdown={categoryToggleDropdown} isCategoryDropdownVisible={isCategoryDropdownVisible}/>
                     </div>
                 </div>

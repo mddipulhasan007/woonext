@@ -6,7 +6,7 @@ import StickyHeaderIcons from "@/components/ui/header/StickyHeaderIcons";
 import SearchInput from "@/components/ui/header/SearchInput";
 import CategoryHeader from "@/components/ui/header/CategoryHeader";
 
-function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,categoryToggleDropdown, isCategoryDropdownVisible}) {
+function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,categoryToggleDropdown, isCategoryDropdownVisible, toggleDrawerCart}) {
 
 
     return (
@@ -37,7 +37,7 @@ function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,c
                         <StickySearch isVisible={isVisible} toggleStickySearch={toggleStickySearch}/>
                     </div>
                     {
-                        isScrolling ? <StickyHeaderIcons toggleStickySearch={toggleStickySearch}/> : ""
+                        isScrolling ? <StickyHeaderIcons toggleStickySearch={toggleStickySearch} toggleDrawerCart={toggleDrawerCart}/> : ""
                     }
 
                 </div>

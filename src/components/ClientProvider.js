@@ -52,6 +52,7 @@ export default function ClientProvider({ children }) {
                 <FooterStickyMenu
                     mobileMenuToggle={mobileMenuToggle}
                     toggleSearch={toggleSearch}
+                    toggleDrawerCart={toggleDrawerCart}
                 />
                 <DrawerCart toggleDrawerCart={toggleDrawerCart} drawerCartVisible={drawerCartVisible}  />
                 {isMobileMenuVisible && (

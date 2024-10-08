@@ -1,6 +1,6 @@
 import React from 'react';
 
-function StickyHeaderIcons({toggleStickySearch}) {
+function StickyHeaderIcons({toggleStickySearch, toggleDrawerCart}) {
     return (
         <div className="text-brand-icon-header ms-auto flex items-center flex-shrink-0">
             <button
@@ -52,6 +52,7 @@ function StickyHeaderIcons({toggleStickySearch}) {
             <button
                 className="flex items-center justify-center shrink-0 h-auto focus:outline-none transform ms-8 "
                 aria-label="cart-button"
+                onClick={toggleDrawerCart}
             >
                 <div className="relative flex items-center">
                     <div className="flex items-center relative cart-button">
