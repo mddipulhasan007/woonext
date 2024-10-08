@@ -5,18 +5,19 @@ import HeaderMenu from "@/components/ui/header/HeaderMenu";
 import StickyHeaderIcons from "@/components/ui/header/StickyHeaderIcons";
 import SearchInput from "@/components/ui/header/SearchInput";
 import CategoryHeader from "@/components/ui/header/CategoryHeader";
+import Link from "next/link";
 
-function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,categoryToggleDropdown, isCategoryDropdownVisible, toggleDrawerCart}) {
+function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,categoryToggleDropdown, isCategoryDropdownVisible, toggleDrawerCart, totalQty}) {
 
 
     return (
         <div id="mainMenu" className="hidden navbar lg:block bg-white border-b border-black/10">
             <div className="mx-auto max-w-[1380px] px-4 md:px-6 3xl:px-0">
                 <div className="flex justify-between items-center">
-                    <a
+                    <Link
                         lang="en"
                         className="inline-flex focus:outline-none navbar-logo w-0 opacity-0 transition-all duration-200 ease-in-out"
-                        href="/en"
+                        href="/"
                     >
                         <Image
                             alt="Razazoror"
@@ -28,7 +29,7 @@ function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,c
                             style={{ color: 'transparent' }}
                             src="/logo.cfe79157.svg"
                         />
-                    </a>
+                    </Link>
 
                     <CategoryHeader categoryToggleDropdown={categoryToggleDropdown} isCategoryDropdownVisible={isCategoryDropdownVisible}/>
                     <HeaderMenu/>
@@ -37,7 +38,7 @@ function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,c
                         <StickySearch isVisible={isVisible} toggleStickySearch={toggleStickySearch}/>
                     </div>
                     {
-                        isScrolling ? <StickyHeaderIcons toggleStickySearch={toggleStickySearch} toggleDrawerCart={toggleDrawerCart}/> : ""
+                        isScrolling ? <StickyHeaderIcons totalQty={totalQty} toggleStickySearch={toggleStickySearch} toggleDrawerCart={toggleDrawerCart}/> : ""
                     }
 
                 </div>

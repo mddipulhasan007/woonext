@@ -7,9 +7,22 @@ import MobileSearch from '@/components/ui/header/MobileSearch';
 import TopBar from '@/components/ui/header/TopBar';
 import MiddleMenu from '@/components/ui/header/MiddleMenu';
 import MainMenu from '@/components/ui/header/MainMenu';
+import {useDispatch, useSelector} from "react-redux";
 
 
 export default function Header({mobileMenuToggle, isSearchVisible, toggleSearch, SearchRef, toggleDrawerCart}) {
+
+
+    const totalQuantity = useSelector((state) => state.cart.totalQuantity);
+    const [totalQty, setTotalQty] = useState([]);
+    const dispatch = useDispatch();
+
+
+    useEffect(() => {
+        setTotalQty(totalQuantity);
+    }, [totalQuantity]);
+
+
     const [isScrolling, setIsScrolling] = useState(false);
     const mainMenuRef = useRef(null);
 
@@ -69,9 +82,9 @@ export default function Header({mobileMenuToggle, isSearchVisible, toggleSearch,
                 <div className="innerSticky z-20 w-full transition duration-200 ease-in-out body-font bg-white">
                     <MobileSearch isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef} />
                     <TopBar/>
-                    <MiddleMenu isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef} mobileMenuToggle={mobileMenuToggle} toggleDrawerCart={toggleDrawerCart} />
+                    <MiddleMenu totalQty={totalQty} isVisible={isSearchVisible} toggleSearch={toggleSearch} SearchRef={SearchRef} mobileMenuToggle={mobileMenuToggle} toggleDrawerCart={toggleDrawerCart} />
                     <div ref={mainMenuRef}>
-                    <MainMenu toggleDrawerCart={toggleDrawerCart} isScrolling={isScrolling} isVisible={isStickySearchVisible}
+                    <MainMenu totalQty={totalQty} toggleDrawerCart={toggleDrawerCart} isScrolling={isScrolling} isVisible={isStickySearchVisible}
                                   toggleStickySearch={toggleStickySearch} stickySearchRef={stickySearchRef} categoryToggleDropdown={categoryToggleDropdown} isCategoryDropdownVisible={isCategoryDropdownVisible}/>
                     </div>
                 </div>

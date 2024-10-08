@@ -2,7 +2,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { Provider } from "react-redux";
+import {Provider} from "react-redux";
 import { store } from "@/store";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -29,13 +29,6 @@ export default function ClientProvider({ children }) {
     };
 
 
-    // Middle menu search overlay
-    const [drawerCartVisible, setDrawerCardVisible] = useState(false);
-    // Toggle visibility when the button is clicked
-    const toggleDrawerCart = () => {
-        setDrawerCardVisible((prev) => !prev);
-    };
-
 
     return (
         <Provider store={store}>
@@ -45,16 +38,14 @@ export default function ClientProvider({ children }) {
                     isSearchVisible={isSearchVisible}
                     toggleSearch={toggleSearch}
                     SearchRef={SearchRef}
-                    toggleDrawerCart={toggleDrawerCart}
                 />
                 {children}
                 <Footer />
                 <FooterStickyMenu
                     mobileMenuToggle={mobileMenuToggle}
                     toggleSearch={toggleSearch}
-                    toggleDrawerCart={toggleDrawerCart}
                 />
-                <DrawerCart toggleDrawerCart={toggleDrawerCart} drawerCartVisible={drawerCartVisible}  />
+                <DrawerCart  />
                 {isMobileMenuVisible && (
                     <MobileMenuDrawer mobileMenuToggle={mobileMenuToggle} />
                 )}

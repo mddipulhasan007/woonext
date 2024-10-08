@@ -1,6 +1,10 @@
 import React from 'react';
 
-function StickyHeaderIcons({toggleStickySearch, toggleDrawerCart}) {
+import {toggleDrawerCart} from "@/slice/drawerSlice";
+import {useDispatch} from "react-redux";
+
+function StickyHeaderIcons({toggleStickySearch, totalQty}) {
+    const dispatch = useDispatch();
     return (
         <div className="text-brand-icon-header ms-auto flex items-center flex-shrink-0">
             <button
@@ -52,7 +56,7 @@ function StickyHeaderIcons({toggleStickySearch, toggleDrawerCart}) {
             <button
                 className="flex items-center justify-center shrink-0 h-auto focus:outline-none transform ms-8 "
                 aria-label="cart-button"
-                onClick={toggleDrawerCart}
+                onClick={() => dispatch(toggleDrawerCart())}
             >
                 <div className="relative flex items-center">
                     <div className="flex items-center relative cart-button">
@@ -79,7 +83,7 @@ function StickyHeaderIcons({toggleStickySearch, toggleDrawerCart}) {
                         </svg>
                         <span
                             className="cart-counter-badge  h-[18px] min-w-[18px] rounded-full flex items-center justify-center bg-red-600 text-brand-light absolute -top-1 ltr:left-3 rtl:right-3 text-11px">
-                        3
+                        {totalQty}
                       </span>
                     </div>
                     <span className="text-sm font-normal ms-2">My Cart</span>

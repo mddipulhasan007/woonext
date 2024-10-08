@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {useDispatch, useSelector} from "react-redux";
+import {toggleDrawerCart} from "@/slice/drawerSlice";
 
-function MenuAccountCart({toggleDrawerCart}) {
+function MenuAccountCart({totalQty}) {
+
+    const dispatch = useDispatch();
+
     return (
         <div className="text-brand-icon-header flex text-sm space-x-5 xl:space-x-10 lg:max-w-[33%]">
             <div className="hidden lg:flex items-center shrink-0 accountButton">
@@ -31,7 +36,7 @@ function MenuAccountCart({toggleDrawerCart}) {
                 </button>
             </div>
             <button
-                onClick={toggleDrawerCart}
+                onClick={() => dispatch(toggleDrawerCart())}
                 className="flex items-center justify-center shrink-0 h-auto focus:outline-none transform hidden lg:flex"
                 aria-label="cart-button"
             >
@@ -60,7 +65,7 @@ function MenuAccountCart({toggleDrawerCart}) {
                         </svg>
                         <span
                             className="cart-counter-badge  h-[18px] min-w-[18px] rounded-full flex items-center justify-center bg-red-600 text-brand-light absolute -top-1 ltr:left-3 rtl:right-3 text-11px">
-                      3
+                      {totalQty}
                     </span>
                     </div>
                     <span className="text-sm font-normal ms-2">My Cart</span>
