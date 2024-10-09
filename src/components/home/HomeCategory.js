@@ -117,6 +117,23 @@ export default function HomeCategory() {
               swiper.navigation.init();
               swiper.navigation.update();
             }}
+            breakpoints={
+              {
+                320: {
+                  slidesPerView: 2
+                },
+                767: {
+                  slidesPerView: 4
+                },
+                1024:{
+                  slidesPerView: 6
+                },
+                1200:{
+                  slidesPerView: 8
+                }
+
+              }
+            }
           >
             {categories.map((category, index) => (
               <SwiperSlide key={index} style={{ width: "163.75px", marginRight: 10 }}>

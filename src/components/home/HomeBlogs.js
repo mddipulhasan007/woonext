@@ -126,6 +126,20 @@ export default function HomeBlogs() {
                             swiper.navigation.init();
                             swiper.navigation.update();
                         }}
+                        breakpoints={
+                            {
+                                320: {
+                                    slidesPerView: 1
+                                },
+                                767: {
+                                    slidesPerView: 2
+                                },
+                                1024:{
+                                    slidesPerView: 4
+                                }
+
+                            }
+                        }
                     >
                         {blogPosts.map((post) => (
                             <SwiperSlide key={post.id} style={{width: "341.25px", marginRight: 5}}>

@@ -96,6 +96,20 @@ function CategoryTab() {
                                         swiper.navigation.init();
                                         swiper.navigation.update();
                                     }}
+                                    breakpoints={
+                                        {
+                                            320: {
+                                                slidesPerView: 2
+                                            },
+                                            767: {
+                                                slidesPerView: 3
+                                            },
+                                            1024:{
+                                                slidesPerView: 6
+                                            }
+
+                                        }
+                                    }
                                     loop={true}
                                 >
                                     {productsForTabs[tab.key].map((product, idx) => (

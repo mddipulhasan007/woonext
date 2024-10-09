@@ -135,6 +135,20 @@ export default function BestProductsCarousel() {
                             swiper.navigation.init();
                             swiper.navigation.update();
                         }}
+                        breakpoints={
+                            {
+                                320: {
+                                    slidesPerView: 2
+                                },
+                                767: {
+                                    slidesPerView: 3
+                                },
+                                1024:{
+                                    slidesPerView: 6
+                                }
+
+                            }
+                        }
                     >
                         {bestProducts.map((product, index) => (
                             <SwiperSlide key={index} style={{width: "224.25px", marginRight: 6}}>
