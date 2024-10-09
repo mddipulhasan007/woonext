@@ -1,10 +1,11 @@
-{
+ {
   "name": "woonext",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate-json": "node src/api/fetchProducts.mjs",
+    "dev": "npm run generate-json && next dev",
+    "build": "npm run generate-json && next build",
     "start": "next start",
     "lint": "next lint",
     "clean": "rimraf .next dist build out"

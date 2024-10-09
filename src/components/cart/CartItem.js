@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeFromCart, updateQuantity } from '@/slice/cartSlice';
 import Link from "next/link";
+import Image from "next/image";
 
 
 function CartItem({cartProducts}) {
@@ -50,7 +51,7 @@ function CartItem({cartProducts}) {
                                                 version="1.1"
                                             />
                                         </div>
-                                        <img
+                                        <Image
                                             alt="[Sample] Able Brewing System consetetur"
                                             loading="lazy"
                                             width={0}
@@ -59,7 +60,6 @@ function CartItem({cartProducts}) {
                                             data-nimg={1}
                                             className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"
                                             sizes="100vw"
-                                            srcSet="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=640&q=75 640w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=750&q=75 750w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=828&q=75 828w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=1080&q=75 1080w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=1200&q=75 1200w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=1920&q=75 1920w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=2048&q=75 2048w, /_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=3840&q=75 3840w"
                                             src="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=3840&q=75"
                                             style={{color: "transparent"}}
                                         />

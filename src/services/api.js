@@ -1,4 +1,4 @@
-import axiosInstance from './axios'; // Adjust the import path as necessary
+import axiosInstance from './axios.js'; // Adjust the import path as necessary
 
 export const fetchProducts = async () => {
   const response = await axiosInstance.get('/products');
