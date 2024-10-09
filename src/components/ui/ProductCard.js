@@ -25,7 +25,7 @@ function ProductCard({product}) {
                             decoding="async"
                             className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"
                             sizes="100vw"
-                            src={product.src}
+                            src={product.src || "/assets/images/products/p-6.jpg"}
                             style={{color: "transparent"}}
                         />
                     </div>
@@ -42,9 +42,9 @@ function ProductCard({product}) {
             <div className="flex flex-col h-full overflow-hidden relative product-cart-content">
                 <Link
                     className="text-skin-base font-semibold text-sm leading-5 min-h-[40px] line-clamp-2 mb-2 hover:text-brand"
-                    href={'/products/product'}
+                    href={`/products/${product.slug}`}
                 >
-                    {product.title}
+                    {product.name || product.title }
                 </Link>
 
                 <Rating/>

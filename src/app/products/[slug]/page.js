@@ -1,4 +1,9 @@
-import { fetchProduct, fetchProducts } from '../../../services/api';
+import { fetchProduct, fetchProducts } from '@/services/api';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';  // Import the navigation styles
+import 'swiper/css/pagination';  // Import the pagination styles
+import ProductClient from "@/clients/ProductClient";
 
 export async function generateStaticParams() {
   const products = await fetchProducts();
@@ -20,10 +25,9 @@ export default async function ProductPage({ params }) {
   const product = await fetchProduct(slug);
 
   return (
-    <div className='mx-auto max-w-[1380px] px-4 md:px-6 3xl:px-0'>
-      <h1>{product.name}</h1>
-      <p>{product.description}</p>
-    </div>
+      <main className="relative flex-grow bg-gray-100">
+        <ProductClient product={product}/>
+      </main>
   );
 }
 

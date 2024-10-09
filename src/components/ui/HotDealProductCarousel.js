@@ -6,7 +6,9 @@ import Link from 'next/link';
 import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
 import ProductCard from "@/components/ui/ProductCard"; // Import custom icons
 
-export default function HotProductCarousel() {
+export default function HotProductCarousel({products}) {
+
+    const hotProducts = products;
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -25,63 +27,63 @@ export default function HotProductCarousel() {
         }
     }, []);
 
-    const hotProducts = [
-        {
-            href: '/en/products/sample-able-brewing-system-consetetur',
-            src: '/assets/images/products/p-1.jpg',
-            alt: '[Sample] Able Brewing System consetetur',
-            title: '[Sample] Able Brewing System consetetur',
-            price: '$2,000.00',
-            sold: '20/50 products',
-            isOnSale: true
-        },
-        {
-            href: '/en/products/sample-tiered-wire-basket-consetetur-sadipscing-elitr',
-            src: '/assets/images/products/p-2.jpg',
-            alt: '[Sample] Tiered Wire Basket consetetur sadipscing elitr',
-            title: '[Sample] Tiered Wire Basket consetetur sadipscing elitr',
-            price: '$5.00 - $15.00',
-            sold: '10/60 products',
-            isOnSale: true
-        },
-        {
-            href: '/en/products/fog-linen-chambray-towel-beige-stripe',
-            src: '/assets/images/products/p-3.jpg',
-            alt: 'Fog Linen Chambray Towel - Beige Stripe',
-            title: 'Fog Linen Chambray Towel - Beige Stripe',
-            price: '$5.00 - $15.00',
-            sold: '16/54 products',
-            isOnSale: true
-        },
-        {
-            href: '/en/products/chemex-coffeemaker-3-cup-consetetur-sadipscing-elitr',
-            src: '/assets/images/products/p-4.jpg',
-            alt: 'Chemex Coffeemaker 3 Cup consetetur sadipscing',
-            title: 'Chemex Coffeemaker 3 Cup consetetur sadipscing',
-            price: '$5.00 - $15.00',
-            sold: '16/54 products',
-            isOnSale: true
-        },
-        {
-            href: '/en/products/chester\'s-fries-flamen-hot-corn-potato-snacks',
-            src: '/assets/images/products/p-5.jpg',
-            alt: 'Chester\'s Fries Flamen Hot Corn Potato Snacks',
-            title: 'Chester\'s Fries Flamen Hot Corn Potato Snacks',
-            price: '$5.00 - $15.00',
-            sold: '26/44 products',
-            isOnSale: true
-        },
-        {
-            href: '/en/products/sample-canvas-laundry-cart-sed-diam-nonumy-eirmod',
-            src: '/assets/images/products/p-6.jpg',
-            alt: '[Sample] Canvas Laundry Cart sed diam nonumy eirmod',
-            title: '[Sample] Canvas Laundry Cart sed diam nonumy eirmod',
-            price: '$15.00 - $25.00',
-            sold: '16/154 products',
-            isOnSale: true
-        }
-    ];
-
+    // const hotProducts = [
+    //     {
+    //         href: '/en/products/sample-able-brewing-system-consetetur',
+    //         src: '/assets/images/products/p-1.jpg',
+    //         alt: '[Sample] Able Brewing System consetetur',
+    //         title: '[Sample] Able Brewing System consetetur',
+    //         price: '$2,000.00',
+    //         sold: '20/50 products',
+    //         isOnSale: true
+    //     },
+    //     {
+    //         href: '/en/products/sample-tiered-wire-basket-consetetur-sadipscing-elitr',
+    //         src: '/assets/images/products/p-2.jpg',
+    //         alt: '[Sample] Tiered Wire Basket consetetur sadipscing elitr',
+    //         title: '[Sample] Tiered Wire Basket consetetur sadipscing elitr',
+    //         price: '$5.00 - $15.00',
+    //         sold: '10/60 products',
+    //         isOnSale: true
+    //     },
+    //     {
+    //         href: '/en/products/fog-linen-chambray-towel-beige-stripe',
+    //         src: '/assets/images/products/p-3.jpg',
+    //         alt: 'Fog Linen Chambray Towel - Beige Stripe',
+    //         title: 'Fog Linen Chambray Towel - Beige Stripe',
+    //         price: '$5.00 - $15.00',
+    //         sold: '16/54 products',
+    //         isOnSale: true
+    //     },
+    //     {
+    //         href: '/en/products/chemex-coffeemaker-3-cup-consetetur-sadipscing-elitr',
+    //         src: '/assets/images/products/p-4.jpg',
+    //         alt: 'Chemex Coffeemaker 3 Cup consetetur sadipscing',
+    //         title: 'Chemex Coffeemaker 3 Cup consetetur sadipscing',
+    //         price: '$5.00 - $15.00',
+    //         sold: '16/54 products',
+    //         isOnSale: true
+    //     },
+    //     {
+    //         href: '/en/products/chester\'s-fries-flamen-hot-corn-potato-snacks',
+    //         src: '/assets/images/products/p-5.jpg',
+    //         alt: 'Chester\'s Fries Flamen Hot Corn Potato Snacks',
+    //         title: 'Chester\'s Fries Flamen Hot Corn Potato Snacks',
+    //         price: '$5.00 - $15.00',
+    //         sold: '26/44 products',
+    //         isOnSale: true
+    //     },
+    //     {
+    //         href: '/en/products/sample-canvas-laundry-cart-sed-diam-nonumy-eirmod',
+    //         src: '/assets/images/products/p-6.jpg',
+    //         alt: '[Sample] Canvas Laundry Cart sed diam nonumy eirmod',
+    //         title: '[Sample] Canvas Laundry Cart sed diam nonumy eirmod',
+    //         price: '$15.00 - $25.00',
+    //         sold: '16/154 products',
+    //         isOnSale: true
+    //     }
+    // ];
+    //
 
 
 

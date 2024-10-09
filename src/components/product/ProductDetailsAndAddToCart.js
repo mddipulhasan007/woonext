@@ -1,17 +1,17 @@
 import React from 'react';
 
-function ProductDetailsAndAddToCart(props) {
+function ProductDetailsAndAddToCart({product}) {
     return (
         <div className="flex flex-col col-span-5 shrink-0 xl:ltr:pl-2 xl:rtl:pr-2">
             <div className="pb-4 lg:pb-8">
                 <div className="md:mb-2.5 block -mt-1.5">
                     <h2 className="text-lg font-medium transition-colors duration-300 text-brand-dark md:text-xl xl:text-2xl">
-                        [Sample] Chemex Coffeemaker 3 Cup consetetur sadipscing elitr
+                        {product.name}
                     </h2>
                 </div>
                 <div className="flex items-center mt-5">
                     <div className="text-brand font-medium text-base md:text-xl xl:text-[30px]">
-                        $25.00 - $40.00
+                        {product.price}
                     </div>
                 </div>
             </div>

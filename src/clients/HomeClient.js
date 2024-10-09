@@ -21,12 +21,12 @@ export default function HomeClient({ products }) {
 
       <div className="bg-gray-100 py-10 sm:py-14">
         <div className="mx-auto max-w-[1380px] px-4 md:px-6 3xl:px-0">
-          <HotDeals />
-          <BestProducts />
+          <HotDeals products={products} />
+          <BestProducts products={products} />
           <GetDiscount />
           {/*<CategoryTab />*/}
           <OfferProducts />
-          <PopularProducts />
+          <PopularProducts products={products} />
           <HomeBlogs />
         </div>
       </div>

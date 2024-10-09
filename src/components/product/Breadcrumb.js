@@ -1,11 +1,12 @@
 import React from 'react';
+import Link from "next/link";
 
-function Breadcrumb(props) {
+function Breadcrumb({product}) {
     return (
         <div className="flex items-center ">
             <ol className="flex items-center w-full overflow-hidden">
                 <li className="text-sm text-brand-muted px-2.5 transition duration-200 ease-in ltr:first:pl-0 rtl:first:pr-0 ltr:last:pr-0 rtl:last:pl-0 hover:text-brand-dark">
-                    <a className="inline-flex " href="/en">
+                    <Link className="inline-flex " href="/">
                         <svg
                             stroke="currentColor"
                             fill="currentColor"
@@ -32,7 +33,7 @@ function Breadcrumb(props) {
                             />
                         </svg>
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li className="text-base text-brand-dark">
                     <svg
@@ -55,9 +56,9 @@ function Breadcrumb(props) {
                     </svg>
                 </li>
                 <li className="text-sm text-brand-muted px-2.5 transition duration-200 ease-in ltr:first:pl-0 rtl:first:pr-0 ltr:last:pr-0 rtl:last:pl-0 hover:text-brand-dark">
-                    <a className="capitalize" href="/en/products">
+                    <Link className="capitalize" href="/products">
                         products
-                    </a>
+                    </Link>
                 </li>
                 <li className="text-base text-brand-dark">
                     <svg
@@ -82,9 +83,8 @@ function Breadcrumb(props) {
                 <li className="text-sm text-brand-muted px-2.5 transition duration-200 ease-in ltr:first:pl-0 rtl:first:pr-0 ltr:last:pr-0 rtl:last:pl-0 hover:text-brand-dark">
                     <a
                         className="capitalize"
-                        href="/en/products/sample-able-brewing-system-consetetur"
                     >
-                        sample able brewing system consetetur
+                        {product.name}
                     </a>
                 </li>
             </ol>

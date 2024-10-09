@@ -7,7 +7,7 @@ import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
 import ProductCard from "@/components/ui/ProductCard";
 import SwiperNavigation from "@/components/ui/SwiperNavigation";
 
-export default function PopularProductsCarousel() {
+export default function PopularProductsCarousel({products}) {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -171,7 +171,7 @@ export default function PopularProductsCarousel() {
                             }
                         }
                     >
-                        {popularProducts.map((product, index) => (
+                        {products.map((product, index) => (
                             <SwiperSlide key={index} style={{ width: "224.25px", marginRight: 6 }}>
                                 <ProductCard product={product} />
                             </SwiperSlide>

@@ -10,7 +10,7 @@ import ProductCard from "@/components/ui/ProductCard";
 
 
 
-export default function BestProductsCarousel() {
+export default function BestProductsCarousel({products}) {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -150,7 +150,7 @@ export default function BestProductsCarousel() {
                             }
                         }
                     >
-                        {bestProducts.map((product, index) => (
+                        {products.map((product, index) => (
                             <SwiperSlide key={index} style={{width: "224.25px", marginRight: 6}}>
                                 <ProductCard product={product}/>
                             </SwiperSlide>
