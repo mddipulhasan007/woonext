@@ -34,7 +34,7 @@ function MainGallery({ swiperRef, thumbsSwiper, images, prevRef, nextRef }) {
                         <div className="relative overflow-hidden mx-auto rounded-lg flex justify-center">
                             <Zoom>
                                 <Image
-                                    alt={image.alt}
+                                    alt={image.alt || "Product name"}
                                     src={image.src}
                                     sizes={image.sizes}
                                     width={500}

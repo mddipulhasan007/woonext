@@ -39,7 +39,7 @@ function CartItem({cartProducts}) {
                                 title="[Sample] Able Brewing System consetetur"
                             >
                                 <div
-                                    className="relative flex rounded overflow-hidden shrink-0 cursor-pointer w-[90px] md:w-[100px] h-[90px] md:h-[100px] border border-border-base">
+                                    className="relative flex rounded overflow-hidden shrink-0 cursor-pointer w-[45px] md:w-[50px] h-[45px] md:h-[50px] border border-border-base">
                                     <div
                                         className="relative inline-block overflow-hidden mx-auto box-sizing object-cover bg-fill-thumbnail">
                                         <div className="block w-full box-sizing">
@@ -52,7 +52,7 @@ function CartItem({cartProducts}) {
                                             />
                                         </div>
                                         <Image
-                                            alt="[Sample] Able Brewing System consetetur"
+                                            alt={item.name || "Product name"}
                                             loading="lazy"
                                             width={0}
                                             height={0}
@@ -60,7 +60,7 @@ function CartItem({cartProducts}) {
                                             data-nimg={1}
                                             className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"
                                             sizes="100vw"
-                                            src="/_next/image?url=%2Fassets%2Fimages%2Fproducts%2Fp-1.jpg&w=3840&q=75"
+                                            src="/assets/images/products/p-3-1.jpg"
                                             style={{color: "transparent"}}
                                         />
                                     </div>
@@ -90,10 +90,19 @@ function CartItem({cartProducts}) {
                                             className="block leading-5 transition-all text-brand-dark text-13px sm:text-sm lg:text-15px hover:text-brand"
                                             href="/products/product"
                                         >
-                                            {item.name}
+                                            {item.name} X {item.quantity}
                                         </Link>
-                                        <div className="text-13px sm:text-sm text-gray-400 mt-1.5 block mb-2">
-                                            Common Good X {item.quantity}
+
+
+                                        <div className="text-13px  text-gray-400 mt-1.5 block mb-2">
+                                            <ul>
+                                                {item.attributes && Object.values(item.attributes).map((attribute, index) => (
+                                                    <ol key={index}>
+                                                        {attribute.name}: {attribute.option}
+                                                    </ol>
+                                                ))}
+                                            </ul>
+
                                         </div>
                                         <div
                                             className="button--mutiqty  flex items-center justify-between rounded overflow-hidden shrink-0  inline-flex">

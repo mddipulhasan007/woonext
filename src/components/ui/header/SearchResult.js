@@ -13,7 +13,7 @@ function SearchResult({ searchResults }) {
                                 <Link className="flex items-center justify-start w-full h-auto group" href="#">
                                     <div className="relative flex w-20 rounded-md overflow-hidden flex-shrink-0 cursor-pointer me-4">
                                         <Image
-                                            alt={result.name}
+                                            alt={result.name || "Product name"}
                                             loading="lazy"
                                             width={70}
                                             height={70}

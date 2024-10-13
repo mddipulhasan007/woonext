@@ -151,7 +151,7 @@ export default function HomeBlogs() {
                                                  width={440} height={280} version="1.1"/>
                                         </div>
                                         <Image
-                                            alt={post.title}
+                                            alt={post.title || "Product name"}
                                             width={0}
                                             height={0}
                                             loading="lazy"

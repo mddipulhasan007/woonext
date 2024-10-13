@@ -1,6 +1,7 @@
 import React from 'react';
 import {toggleDrawerCart} from "@/slice/drawerSlice";
 import {useDispatch} from "react-redux";
+import {clearCart} from "@/slice/cartSlice";
 
 function CartHeader() {
     const dispatch = useDispatch();
@@ -37,7 +38,9 @@ function CartHeader() {
                             />
                         </g>
                     </svg>
-                    <span className="ltr:pl-1 lg:rtl:pr-1">Clear All</span>
+                    <span
+                        onClick={()=>dispatch(clearCart())}
+                        className="ltr:pl-1 lg:rtl:pr-1">Clear All</span>
                 </button>
 
                 <button

@@ -18,7 +18,7 @@ function ProductCard({product}) {
                         className="relative inline-block overflow-hidden mx-auto box-sizing object-cover bg-fill-thumbnail">
                         <ImageHelper />
                         <Image
-                            alt={product.title}
+                            alt={product.title || "Product name"}
                             width={0}
                             height={0}
                             loading="lazy"

@@ -135,7 +135,7 @@ export default function HeroSliderBlock() {
                       />
                     </div>
                     <Image
-                      alt={banner.alt}
+                      alt={banner.alt || "Product name"}
                       loading="lazy"
                       width={0}
                       height={0}

@@ -151,7 +151,7 @@ export default function HomeCategory() {
                             />
                         </div>
                         <Image
-                          alt={category.alt}
+                          alt={category.alt || "Product name"}
                           width={0}
                           height={0}
                           loading="lazy"
