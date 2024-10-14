@@ -30,7 +30,7 @@ function ProductNamePrice({ product }) {
             {/* Product Name */}
             <div className="md:mb-2.5 block -mt-1.5">
                 <h2 className="text-lg font-medium transition-colors duration-300 text-brand-dark md:text-xl xl:text-2xl">
-                    {product.name}
+                    {product? product.name: ""}
                 </h2>
             </div>
 

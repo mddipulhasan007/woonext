@@ -81,11 +81,11 @@ function Breadcrumb({product}) {
                     </svg>
                 </li>
                 <li className="text-sm text-brand-muted px-2.5 transition duration-200 ease-in ltr:first:pl-0 rtl:first:pr-0 ltr:last:pr-0 rtl:last:pl-0 hover:text-brand-dark">
-                    <a
+                    <p
                         className="capitalize"
                     >
-                        {product.name}
-                    </a>
+                        {product? product.name : ""}
+                    </p>
                 </li>
             </ol>
         </div>

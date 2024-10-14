@@ -66,7 +66,7 @@ function CartItems() {
                   />
                 </div>
                 <h6 className="font-normal text-15px text-brand-dark ltr:pl-3 rtl:pr-3">
-                  {product.name}
+                  {product? product.name : ""}
                 </h6>
                 <div className="flex ltr:ml-auto rtl:mr-auto text-15px text-brand-dark shrink-0">
                   ${Number(product.price || 0).toFixed(2)}

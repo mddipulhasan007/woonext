@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Rating from "@/components/ui/Rating";
 import ImageHelper from "@/components/ui/ImageHelper";
