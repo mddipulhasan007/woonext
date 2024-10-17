@@ -19,7 +19,9 @@ function AddtoCartButton({ product, selectedVariation, isVariableProduct }) {
                     return acc;
                 }, {}) : {}
         }
-        : {};
+        : {
+        ...product
+        };
 
     const handleAddToCart = () => {
         if (!isAddToCartDisabled) {
