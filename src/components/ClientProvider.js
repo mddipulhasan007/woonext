@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import MobileMenuDrawer from "@/components/MobileMenuDrawer";
 import FooterStickyMenu from "@/components/ui/FooterStickyMenu";
 import DrawerCart from "@/components/DrawerCart";
+import {ToastContainer} from "react-toastify";
 
 export default function ClientProvider({ children }) {
     // Mobile menu toggle
@@ -50,6 +51,9 @@ export default function ClientProvider({ children }) {
                     <MobileMenuDrawer mobileMenuToggle={mobileMenuToggle} />
                 )}
             </div>
+            <ToastContainer
+                position={"top-center"}
+            />
         </Provider>
     );
 }

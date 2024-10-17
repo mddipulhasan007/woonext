@@ -96,7 +96,7 @@ function CartItem({cartProducts}) {
 
                                         <div className="text-13px  text-gray-400 mt-1.5 block mb-2">
                                             <ul>
-                                                {item.attributes && Object.values(item.attributes).map((attribute, index) => (
+                                                {item.selectedAttributes && Object.values(item.selectedAttributes).map((attribute, index) => (
                                                     <ol key={index}>
                                                         {attribute.name}: {attribute.option}
                                                     </ol>
@@ -107,6 +107,7 @@ function CartItem({cartProducts}) {
                                         <div
                                             className="button--mutiqty  flex items-center justify-between rounded overflow-hidden shrink-0  inline-flex">
                                             <button
+                                                disabled={item.quantity <=1? "disabled": ""}
                                                 onClick={()=>dispatch(updateQuantity({id: item.id, quantity: item.quantity-1}))}
                                                 className="flex items-center justify-center shrink-0 transition-all ease-in-out duration-300 focus:outline-none focus-visible:outline-none !w-6 !h-6 pr-0 border border-border-three hover:bg-brand text-brand-muted hover:border-brand rounded-full hover:text-brand-light">
                                                 <span className="sr-only">button-minus</span>
@@ -160,7 +161,7 @@ function CartItem({cartProducts}) {
                                     <div
                                         className="flex font-semibold text-sm md:text-base text-brand-dark leading-5 shrink-0 min-w-[65px]  justify-end">
                                         {
-                                            item.price*item.quantity
+                                            Number(item.price*item.quantity).toFixed(2)
                                         }$
                                     </div>
                                 </div>

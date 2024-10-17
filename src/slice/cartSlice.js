@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import {toast} from "react-toastify";
 
 const initialState = {
     items: [],
@@ -28,30 +29,31 @@ const cartSlice = createSlice({
     reducers: {
         addToCart(state, action) {
             const newItem = action.payload;
+            console.log(newItem);
             const existingItem = state.items.find((item) => item.id === newItem.id);
 
             if (!existingItem) {
                 state.items.push({
                     ...newItem,
-                    quantity: 1,
+                    quantity: newItem.quantity,
                 });
             } else {
-                existingItem.quantity++;
+                existingItem.quantity += newItem.quantity;
             }
 
             // Recalculate totalQuantity and totalPrice based on all items in the cart
             state.totalQuantity = state.items.reduce((total, item) => total + item.quantity, 0);
             state.totalPrice = state.items.reduce((total, item) => total + (item.price * item.quantity), 0);
-
+            toast.success('Product added successfully!')
             saveCartToLocalStorage(state); // Save cart to localStorage after adding item
         },
         removeFromCart(state, action) {
             const id = action.payload;
             const existingItem = state.items.find((item) => item.id === id);
             if (existingItem) {
-                state.totalQuantity--;
-                state.totalPrice -= existingItem.price * existingItem.quantity;
                 state.items = state.items.filter((item) => item.id !== id);
+                state.totalQuantity = state.items.reduce((total, item) => total + item.quantity, 0);
+                state.totalPrice = state.items.reduce((total, item) => total + (item.price * item.quantity), 0);
                 saveCartToLocalStorage(state); // Save cart to localStorage after removing item
             }
         },
@@ -59,9 +61,9 @@ const cartSlice = createSlice({
             const { id, quantity } = action.payload;
             const existingItem = state.items.find((item) => item.id === id);
             if (existingItem) {
-                state.totalPrice -= existingItem.price * existingItem.quantity;
                 existingItem.quantity = quantity;
-                state.totalPrice += existingItem.price * quantity;
+                state.totalQuantity = state.items.reduce((total, item) => total + item.quantity, 0);
+                state.totalPrice = state.items.reduce((total, item) => total + (item.price * item.quantity), 0);
                 saveCartToLocalStorage(state); // Save cart to localStorage after updating quantity
             }
         },

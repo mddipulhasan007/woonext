@@ -3,28 +3,33 @@ import CartIconWhite from "@/components/icons/CartIconWhite";
 import { addToCart } from "@/slice/cartSlice";
 import { useDispatch } from "react-redux";
 
-function AddtoCartButton({ product, selectedVariation, isVariableProduct }) {
+function AddtoCartButton({ product, quantity, selectedVariation, isVariableProduct }) {
     const isAddToCartDisabled = isVariableProduct && !selectedVariation;
     const dispatch = useDispatch();
 
     // Prepare the variation details to include attributes and values if it's a variable product
-    const variationTocart = selectedVariation
+    const variationTocart = isVariableProduct && selectedVariation
         ? {
             ...selectedVariation,
             id: selectedVariation.id,
             name: product.name,
-            attributes: selectedVariation.attributes ?
+            selectedAttributes: selectedVariation.attributes ?
                 Object.entries(selectedVariation.attributes).reduce((acc, [key, value]) => {
                     acc[key] = value; // attribute name as key and attribute value
                     return acc;
-                }, {}) : {}
+                }, {}) : {},
+            quantity: quantity
         }
         : {
-        ...product
+        ...product,
+            quantity: quantity
         };
 
     const handleAddToCart = () => {
         if (!isAddToCartDisabled) {
+            // console.log(product);
+            // console.log(selectedVariation);
+            // console.log(isVariableProduct);
             dispatch(addToCart(variationTocart));
         }
     };

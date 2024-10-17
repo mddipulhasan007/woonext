@@ -1,7 +1,6 @@
 // app/layout.js
 // external
 import "react-toastify/dist/ReactToastify.css";
-
 // base css file
 import "@/assets/css/scrollbar.css";
 import "@/assets/css/swiper-carousel.css";
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
         <html lang="en" dir="ltr">
         <head />
         <body>
-        <ClientProvider>{children}</ClientProvider>
+            <ClientProvider>{children}</ClientProvider>
         </body>
         </html>
     );

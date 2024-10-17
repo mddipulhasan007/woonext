@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-function QuantityUpdate(props) {
+function QuantityUpdate({quantity, decreaseQuantity, increaseQuantity}) {
+
+
     return (
         <div
-            className="button--mutiqty  flex items-center justify-between rounded overflow-hidden shrink-0  rounded-md h-11 md:h-14 bg-[#f3f5f9] w-40 mb-5">
+            className="button--mutiqty flex items-center justify-between rounded overflow-hidden shrink-0 rounded-md h-11 md:h-14 bg-[#f3f5f9] w-40 mb-5">
             <button
+                onClick={decreaseQuantity}
                 className="flex items-center justify-center shrink-0 transition-all ease-in-out duration-300 focus:outline-none focus-visible:outline-none !w-8 !h-8 rounded-full transform scale-80 lg:scale-100 text-brand-dark hover:bg-fill-four ltr:ml-auto rtl:mr-auto">
                 <span className="sr-only">button-minus</span>
                 <svg
@@ -27,9 +30,10 @@ function QuantityUpdate(props) {
             </button>
             <span
                 className="font-semibold flex items-center justify-center h-full transition-colors duration-250 ease-in-out cursor-default shrink-0 text-base md:text-[17px] w-12 md:w-12">
-            1
-          </span>
+                {quantity}
+            </span>
             <button
+                onClick={increaseQuantity}
                 className="group flex items-center justify-center flex-shrink-0 transition-all ease-in-out duration-300 focus:outline-none focus-visible:outline-none !w-8 !h-8 rounded-full scale-80 lg:scale-100 text-heading hover:bg-fill-four ltr:mr-auto rtl:ml-auto !pr-0 justify-center"
                 title=""
             >

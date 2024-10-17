@@ -3,13 +3,18 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "@/slice/cartSlice";
 import { openDrawerCart } from "@/slice/drawerSlice";
 import Link from "next/link";
+import {toast} from "react-toastify";
 
 function AddtoCart({ product }) {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addToCart(product));
+    dispatch(addToCart({
+      ...product,
+      quantity: 1
+    }));
     dispatch(openDrawerCart());
+
   };
 
   return (
