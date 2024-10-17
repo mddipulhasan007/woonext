@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 
 function TopBar(props) {
     return (
@@ -11,28 +12,20 @@ function TopBar(props) {
                     <div className="flex flex-shrink-0 smx-auto pace-s-5">
                         <nav className=" flex relative  flex transition-all duration-200 ease-in-out">
                             <div className="menuItem group cursor-pointer mx-2 md:mx-3 ">
-                                <a
+                                <Link
                                     className="text-fill-base inline-flex items-center py-2 font-normal relative group-hover:text-brand "
-                                    href="/en/my-account/wishlist"
+                                    href="#"
                                 >
                                     Wishlist
-                                </a>
+                                </Link>
                             </div>
                             <div className="menuItem group cursor-pointer mx-2 md:mx-3 ">
-                                <a
+                                <Link
                                     className="text-fill-base inline-flex items-center py-2 font-normal relative group-hover:text-brand "
-                                    href="/en/checkout"
+                                    href="/checkout"
                                 >
                                     Checkout
-                                </a>
-                            </div>
-                            <div className="menuItem group cursor-pointer mx-2 md:mx-3 ">
-                                <a
-                                    className="text-fill-base inline-flex items-center py-2 font-normal relative group-hover:text-brand "
-                                    href="/en"
-                                >
-                                    Gift Certificates
-                                </a>
+                                </Link>
                             </div>
                         </nav>
                     </div>

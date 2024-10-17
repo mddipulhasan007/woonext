@@ -26,7 +26,7 @@ function CartItem({cartProducts}) {
                     left: 0,
                     width: "calc(100% + 0px)",
                     padding: 0,
-                    overflowY: "scroll"
+                    overflowY: "auto"
                 }}
             >
                 <div className="w-full px-5 md:px-7 h-[calc(100vh_-_300px)]">

@@ -64,7 +64,7 @@ function CategoryTab() {
             <div className="listing-tabs category-listing-tab">
                 <div className="sm:flex items-center block-title mb-1.5 gap-2 px-5 py-2.5 rounded bg-white ltabs-heading">
                     <h3 className="text-base text-[16px] uppercase text-skin-base font-bold border-0 hover:text-skin-primary lg:basis-[30%]">
-                        <a href="/en/search?category=electronic-digital">Electronic &amp; Digital</a>
+                        <a href="#?category=electronic-digital">Electronic &amp; Digital</a>
                     </h3>
                     <div className="ltabs-tabs-wrap flex flex-wrap justify-end lg:basis-[70%]">
                         <ul className="flex text-[14px] leading-7">

@@ -13,9 +13,9 @@ function SortByPriceAndViewAs({ onSortChange }) {
 
     return (
         <div className="sm:flex items-center justify-between mb-4 bg-white shadow-md rounded-lg p-2">
-            <MobileFilterButton />
-            <div className="flex items-center justify-end w-full lg:justify-between mt-2 sm:mt-0">
-                <h2 className="font-semibold text-lg text-gray-800">All Products</h2>
+            {/*<MobileFilterButton />*/}
+            <div className="flex items-center justify-start sm:justify-end w-full lg:justify-between mt-2 sm:mt-0">
+                <h2 className="font-semibold text-lg text-gray-800 hidden sm:block">All Products</h2>
                 <div className="relative ml-4 w-full max-w-xs">
                     {/* Sorting dropdown */}
                     <select

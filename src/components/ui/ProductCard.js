@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 function ProductCard({ product }) {
+ // console.log(product)
   return (
     <article
       className="flex flex-col gap-2 product-card relative p-2 sm:p-4 h-full rounded bg-white card-image--jump"
@@ -26,7 +27,7 @@ function ProductCard({ product }) {
                 decoding="async"
                 className="absolute top-0 left-0 right-0 bottom-0 max-w-full max-h-full min-w-full min-h-full object-cover"
                 sizes="100vw"
-                src={product.src || "/assets/images/products/p-6.jpg"}
+                src={product?.images?.src || "/assets/images/products/p-6.jpg"}
                 style={{ color: "transparent" }}
               />
             </div>

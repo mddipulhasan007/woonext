@@ -203,7 +203,7 @@ function FooterMenu(props) {
                     <li className="flex items-baseline">
                         <a
                             className="transition-colors duration-200 hover:text-brand"
-                            href="/en/search"
+                            href="#"
                         >
                             Electronic &amp; Digital
                         </a>
@@ -211,7 +211,7 @@ function FooterMenu(props) {
                     <li className="flex items-baseline">
                         <a
                             className="transition-colors duration-200 hover:text-brand"
-                            href="/en/search"
+                            href="#"
                         >
                             Health &amp; Beauty
                         </a>
@@ -219,7 +219,7 @@ function FooterMenu(props) {
                     <li className="flex items-baseline">
                         <a
                             className="transition-colors duration-200 hover:text-brand"
-                            href="/en/search"
+                            href="#"
                         >
                             Return Policy
                         </a>
@@ -227,7 +227,7 @@ function FooterMenu(props) {
                     <li className="flex items-baseline">
                         <a
                             className="transition-colors duration-200 hover:text-brand"
-                            href="/en/search"
+                            href="#"
                         >
                             Top 10 Offers
                         </a>
@@ -235,7 +235,7 @@ function FooterMenu(props) {
                     <li className="flex items-baseline">
                         <a
                             className="transition-colors duration-200 hover:text-brand"
-                            href="/en/search"
+                            href="#"
                         >
                             Jewelry &amp; Watches
                         </a>
@@ -243,7 +243,7 @@ function FooterMenu(props) {
                     <li className="flex items-baseline">
                         <a
                             className="transition-colors duration-200 hover:text-brand"
-                            href="/en/search"
+                            href="#"
                         >
                             Book &amp; Office
                         </a>

@@ -440,4 +440,6 @@ input[type='search']::-webkit-search-results-decoration {
 button[disabled]{
   cursor: not-allowed;
 }
-
+.address__box input, .address__box select{
+  color: #000000;
+}

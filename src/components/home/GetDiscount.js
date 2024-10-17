@@ -8,7 +8,7 @@ function GetDiscount(props) {
                 <div className="mx-auto w-full overflow-hidden rounded">
                     <a
                         className="h-full w-full group flex justify-center relative overflow-hidden"
-                        href="/en/search"
+                        href="#"
                     >
                         <div className="relative inline-block overflow-hidden w-full box-sizing">
                             <div className="block w-full box-sizing">

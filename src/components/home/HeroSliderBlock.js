@@ -27,19 +27,19 @@ export default function HeroSliderBlock() {
       backgroundImage: 'url("/assets/images/hero/home1/slide-1.jpg")',
       subTitle: 'Top Trending',
       title: 'Trending Your New Style',
-      href: '/en/search',
+      href: '#',
     },
     {
       backgroundImage: 'url("/assets/images/hero/home1/slide-2.jpg")',
       subTitle: 'New Arrivals',
       title: 'Apple Top AirPods Pro',
-      href: '/en/search',
+      href: '#',
     },
     {
       backgroundImage: 'url("/assets/images/hero/home1/slide-3.jpg")',
       subTitle: 'Top Offer',
       title: 'Cellphone 25MP Pro Camera',
-      href: '/en/search',
+      href: '#',
     },
   ];
 
@@ -48,12 +48,12 @@ export default function HeroSliderBlock() {
     {
       imgSrc: '/assets/images/banner/home1/slider-1.png',
       alt: 'Free delivery from your store',
-      href: '/en/search',
+      href: '#',
     },
     {
       imgSrc: '/assets/images/banner/home1/slider-2.png',
       alt: 'Fresh Healthy Breakfast food',
-      href: '/en/search',
+      href: '#',
     },
   ];
 

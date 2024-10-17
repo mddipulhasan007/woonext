@@ -31,7 +31,7 @@ function MainMenu({isScrolling, isVisible, toggleStickySearch, stickySearchRef,c
                         />
                     </Link>
 
-                    <CategoryHeader categoryToggleDropdown={categoryToggleDropdown} isCategoryDropdownVisible={isCategoryDropdownVisible}/>
+                    {/*<CategoryHeader categoryToggleDropdown={categoryToggleDropdown} isCategoryDropdownVisible={isCategoryDropdownVisible}/>*/}
                     <HeaderMenu/>
 
                     <div ref={stickySearchRef}>

@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeBlogs() {
     const prevRef = useRef(null);
@@ -143,8 +144,8 @@ export default function HomeBlogs() {
                     >
                         {blogPosts.map((post) => (
                             <SwiperSlide key={post.id} style={{width: "341.25px", marginRight: 5}}>
-                                <a className="group flex flex-col rounded bg-white overflow-hidden text-brand-muted"
-                                   href={post.link}>
+                                <Link className="group flex flex-col rounded bg-white overflow-hidden text-brand-muted"
+                                   href="#">
                                     <div className="relative inline-block overflow-hidden mx-auto box-sizing rounded">
                                         <div className="block w-full box-sizing">
                                             <svg className="block max-w-full h-auto" xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +182,7 @@ export default function HomeBlogs() {
                                             <div className="entry-meta text-gray-500 flex">{post.date}</div>
                                         </div>
                                     </div>
-                                </a>
+                                </Link>
                             </SwiperSlide>
                         ))}
                     </Swiper>

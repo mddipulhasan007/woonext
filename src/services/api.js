@@ -2,7 +2,7 @@ import {axiosInstance, axiosInstanceV1} from './axios.js'; // Adjust the import 
 
 export const fetchProducts = async () => {
   const response = await axiosInstance.get('/products');
-  console.log('fetch products');
+  console.log('fetching products');
   return response.data;
 };
 

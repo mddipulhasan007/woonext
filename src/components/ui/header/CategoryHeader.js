@@ -36,7 +36,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  false text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Audio Music</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -61,7 +61,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Bags &amp; Accessories</span>
                                                 </a>
@@ -70,7 +70,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Jewelry &amp; Watches</span>
@@ -79,7 +79,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Accessories</span>
                                                             </a>
@@ -87,7 +87,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Wedding Rings</span>
                                                             </a>
@@ -95,7 +95,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Men Watches</span>
                                                             </a>
@@ -103,7 +103,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Woman Watches</span>
                                                             </a>
@@ -114,7 +114,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Electronic &amp; Digital</span>
                                                 </a>
@@ -123,7 +123,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Mobiles &amp; Tablets</span>
@@ -132,7 +132,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Camera, Photo &amp; Video
@@ -142,7 +142,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Mobiles</span>
                                                             </a>
@@ -150,7 +150,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Tablets</span>
                                                             </a>
@@ -158,7 +158,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">PC Gaming</span>
                                                             </a>
@@ -169,7 +169,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Garden &amp; Kitchen</span>
                                                 </a>
@@ -178,7 +178,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Helicopters &amp; Parts
@@ -188,7 +188,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Toys &amp; Hobbies</span>
@@ -197,7 +197,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Outdoor &amp; Traveling
@@ -207,7 +207,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Home &amp; Kitchen</span>
@@ -216,7 +216,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Lighting &amp; Lamps</span>
@@ -228,7 +228,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Automotive</span>
                                                 </a>
@@ -237,7 +237,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Automotive</span>
                                                             </a>
@@ -245,7 +245,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Car Alarms and Security
@@ -255,7 +255,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Car Audio &amp; Speakers
@@ -265,7 +265,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Home &amp; Kitchen</span>
@@ -274,7 +274,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Lighting &amp; Lamps</span>
@@ -286,7 +286,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Lighting &amp; Lamps</span>
                                                 </a>
@@ -295,7 +295,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Wedding Rings</span>
                                                             </a>
@@ -303,7 +303,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Electronic &amp; Digital
@@ -313,7 +313,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Garden &amp; Kitchen</span>
@@ -322,7 +322,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Home &amp; Kitchen</span>
@@ -331,7 +331,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Lighter &amp; Cigar Supplies
@@ -344,7 +344,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Home Accessories</span>
                                                 </a>
@@ -353,7 +353,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Bags &amp; Accessories
@@ -363,7 +363,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Electronic &amp; Digital
@@ -373,7 +373,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Garden &amp; Kitchen</span>
@@ -382,7 +382,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Gift for Man</span>
                                                             </a>
@@ -390,7 +390,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Gift for Woman</span>
                                                             </a>
@@ -404,7 +404,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  false text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Phones &amp; Tablets</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -429,7 +429,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Bags &amp; Accessories</span>
                                                 </a>
@@ -438,7 +438,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Jewelry &amp; Watches</span>
@@ -447,7 +447,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Accessories</span>
                                                             </a>
@@ -455,7 +455,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Wedding Rings</span>
                                                             </a>
@@ -463,7 +463,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Men Watches</span>
                                                             </a>
@@ -471,7 +471,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Woman Watches</span>
                                                             </a>
@@ -482,7 +482,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Electronic &amp; Digital</span>
                                                 </a>
@@ -491,7 +491,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Mobiles &amp; Tablets</span>
@@ -500,7 +500,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Camera, Photo &amp; Video
@@ -510,7 +510,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Mobiles</span>
                                                             </a>
@@ -518,7 +518,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">Tablets</span>
                                                             </a>
@@ -526,7 +526,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize ">PC Gaming</span>
                                                             </a>
@@ -537,7 +537,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="relative transition  text-sm  text-skin-base ">
                                                 <a
                                                     className="flex items-center w-full hover:text-skin-primary text-base font-medium"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize ">Garden &amp; Kitchen</span>
                                                 </a>
@@ -546,7 +546,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Helicopters &amp; Parts
@@ -556,7 +556,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Toys &amp; Hobbies</span>
@@ -565,7 +565,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize ">
                         Outdoor &amp; Traveling
@@ -575,7 +575,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Home &amp; Kitchen</span>
@@ -584,7 +584,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="relative transition  text-sm text-skin-base hover:text-skin-primary">
                                                             <a
                                                                 className="flex items-center w-full hover:text-skin-primary  "
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize ">Lighting &amp; Lamps</span>
@@ -599,7 +599,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Fashion &amp; Clothing</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -624,7 +624,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Bags &amp; Accessories</span>
                                                     <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -649,7 +649,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Jewelry &amp; Watches</span>
@@ -658,7 +658,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Accessories</span>
                                                             </a>
@@ -666,7 +666,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Wedding Rings</span>
                                                             </a>
@@ -674,7 +674,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Men Watches</span>
                                                             </a>
@@ -682,7 +682,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Woman Watches</span>
                                                             </a>
@@ -693,7 +693,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Electronic &amp; Digital</span>
                                                     <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -718,7 +718,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Mobiles &amp; Tablets</span>
@@ -727,7 +727,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Camera, Photo &amp; Video
@@ -737,7 +737,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Mobiles</span>
                                                             </a>
@@ -745,7 +745,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Tablets</span>
                                                             </a>
@@ -753,7 +753,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">PC Gaming</span>
                                                             </a>
@@ -764,7 +764,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Garden &amp; Kitchen</span>
                                                     <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -789,7 +789,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Helicopters &amp; Parts
@@ -799,7 +799,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Toys &amp; Hobbies</span>
@@ -808,7 +808,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Outdoor &amp; Traveling
@@ -818,7 +818,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Home &amp; Kitchen</span>
@@ -827,7 +827,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Lighting &amp; Lamps</span>
@@ -839,7 +839,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Automotive</span>
                                                     <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -864,7 +864,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Automotive</span>
                                                             </a>
@@ -872,7 +872,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Car Alarms and Security
@@ -882,7 +882,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Car Audio &amp; Speakers
@@ -892,7 +892,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Home &amp; Kitchen</span>
@@ -901,7 +901,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Lighting &amp; Lamps</span>
@@ -913,7 +913,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Lighting &amp; Lamps</span>
                                                     <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -938,7 +938,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Wedding Rings</span>
                                                             </a>
@@ -946,7 +946,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Electronic &amp; Digital
@@ -956,7 +956,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Garden &amp; Kitchen</span>
@@ -965,7 +965,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Home &amp; Kitchen</span>
@@ -974,7 +974,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Lighter &amp; Cigar Supplies
@@ -987,7 +987,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Home Accessories</span>
                                                     <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -1012,7 +1012,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Bags &amp; Accessories</span>
@@ -1021,7 +1021,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                       <span className="capitalize">
                         Electronic &amp; Digital
@@ -1031,7 +1031,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                     <span
                                                                         className="capitalize">Garden &amp; Kitchen</span>
@@ -1040,7 +1040,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Gift for Man</span>
                                                             </a>
@@ -1048,7 +1048,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                                         <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                             <a
                                                                 className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                                href="/en/search"
+                                                                href="#"
                                                             >
                                                                 <span className="capitalize">Gift for Woman</span>
                                                             </a>
@@ -1062,7 +1062,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Garden &amp; Kitchen</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -1087,7 +1087,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Helicopters &amp; Parts</span>
                                                 </a>
@@ -1095,7 +1095,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Toys &amp; Hobbies</span>
                                                 </a>
@@ -1103,7 +1103,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Outdoor &amp; Traveling</span>
                                                 </a>
@@ -1111,7 +1111,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Home &amp; Kitchen</span>
                                                 </a>
@@ -1119,7 +1119,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Lighting &amp; Lamps</span>
                                                 </a>
@@ -1130,7 +1130,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">TV &amp; Video</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -1155,7 +1155,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Apples</span>
                                                 </a>
@@ -1163,7 +1163,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Melons</span>
                                                 </a>
@@ -1171,7 +1171,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Berries</span>
                                                 </a>
@@ -1179,7 +1179,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">LG</span>
                                                 </a>
@@ -1187,7 +1187,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Samsung</span>
                                                 </a>
@@ -1198,7 +1198,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Beauty &amp; Health</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -1223,7 +1223,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Fruit Juice</span>
                                                 </a>
@@ -1231,7 +1231,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Ice Coffee</span>
                                                 </a>
@@ -1239,7 +1239,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Comodianos</span>
                                                 </a>
@@ -1247,7 +1247,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Punch</span>
                                                 </a>
@@ -1255,7 +1255,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Montemous</span>
                                                 </a>
@@ -1266,7 +1266,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Jewelry &amp; Watches</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -1291,7 +1291,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Fruit Juice</span>
                                                 </a>
@@ -1299,7 +1299,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Home Appliances </span>
                                                 </a>
@@ -1307,7 +1307,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Shirts</span>
                                                 </a>
@@ -1315,7 +1315,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Punch</span>
                                                 </a>
@@ -1323,7 +1323,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Montemous</span>
                                                 </a>
@@ -1334,7 +1334,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Top 10 Offers</span>
                                         <span className="hidden ltr:ml-auto rtl:mr-auto md:inline-flex">
@@ -1359,7 +1359,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Footwear</span>
                                                 </a>
@@ -1367,7 +1367,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Digital</span>
                                                 </a>
@@ -1375,7 +1375,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Davenport</span>
                                                 </a>
@@ -1383,7 +1383,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Punch</span>
                                                 </a>
@@ -1391,7 +1391,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                             <li className="flex justify-between items-center transition  relative text-sm px-3 ltr:pl-4 rtl:pr-4 text-brand-muted hover:text-brand ">
                                                 <a
                                                     className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base"
-                                                    href="/en/search"
+                                                    href="#"
                                                 >
                                                     <span className="capitalize">Bedside</span>
                                                 </a>
@@ -1402,7 +1402,7 @@ function CategoryHeader({categoryToggleDropdown, isCategoryDropdownVisible}) {
                                 <li className="flex justify-between items-center transition  relative text-sm hover:text-brand px-3.5 2xl:px-4 ">
                                     <a
                                         className="flex items-center w-full py-3 demo  text-start outline-none focus:outline-none focus:ring-0 focus:text-skin-base text-brand-dark font-medium border-b border-border-base "
-                                        href="/en/search"
+                                        href="#"
                                     >
                                         <span className="capitalize">Accessories</span>
                                     </a>

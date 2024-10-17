@@ -5,7 +5,7 @@ import ProductCard from "@/components/ui/ProductCard";
 
 function ProductsGrid({ products }) {
     const [sortedProducts, setSortedProducts] = useState(products); // Sorted products
-    const [visibleCount, setVisibleCount] = useState(5); // Show initial 6 products
+    const [visibleCount, setVisibleCount] = useState(10); // Show initial 6 products
     const [sortOption, setSortOption] = useState(''); // Track selected sort option
 
     // Handle sort change
@@ -29,7 +29,7 @@ function ProductsGrid({ products }) {
 
     // Load more products
     const handleLoadMore = () => {
-        setVisibleCount(prevCount => prevCount + 6); // Load 6 more products
+        setVisibleCount(prevCount => prevCount + 10); // Load 6 more products
     };
 
     return (
