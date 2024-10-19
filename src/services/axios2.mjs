@@ -8,7 +8,7 @@ const axiosInstance = axios.create({
         password: 'cs_d633a9ca4841f75710688eaf44247534811f18ec',
     },
     params: {
-        per_page: 100, // Maximum number of products per page (100 is the max for WooCommerce)
+        per_page: 30, // Maximum number of products per page (100 is the max for WooCommerce)
         page: 1, // The page number
     },
 });
