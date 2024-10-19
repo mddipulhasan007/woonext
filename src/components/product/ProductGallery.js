@@ -51,7 +51,7 @@ const images = [
     // Add more images as needed
 ];
 
-const ProductGallery = () => {
+const ProductGallery = ({product}) => {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -79,8 +79,8 @@ const ProductGallery = () => {
         <div className="col-span-5 mb-6 overflow-hidden md:mb-8 lg:mb-0">
             <div className="w-full xl:flex relative flex-col">
                 {/*<GalleryPreview />*/}
-                <MainGallery swiperRef={swiperRef} thumbsSwiper={thumbsSwiper } images={images} prevRef={prevRef} nextRef={nextRef}/>
-                <GalleryThumbnails images={images} setThumbsSwiper={setThumbsSwiper} />
+                <MainGallery swiperRef={swiperRef} thumbsSwiper={thumbsSwiper } images={product.images} prevRef={prevRef} nextRef={nextRef}/>
+                <GalleryThumbnails images={product.images} setThumbsSwiper={setThumbsSwiper} />
             </div>
         </div>
     );

@@ -11,14 +11,14 @@ import ProductDetails from "@/components/product/ProductDetails";
 
 
 
-function ProductClient({product}) {
+function ProductClient({product, products}) {
     return (
         <>
             <div className="pt-6 lg:pt-7 ">
                 <div className="mx-auto max-w-[1380px] px-4 md:px-6 3xl:px-0">
                     <Breadcrumb product={product}/>
                     <ProductDetails product={product}/>
-                    <RelatedProducts />
+                    <RelatedProducts products={products} />
 
                 </div>
             </div>

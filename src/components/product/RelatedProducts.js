@@ -7,7 +7,7 @@ import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
 import ProductCard from "@/components/ui/ProductCard";
 
 
-export default function RelatedProducts() {
+export default function RelatedProducts({products}) {
     const prevRef = useRef(null);
     const nextRef = useRef(null);
     const swiperRef = useRef(null);
@@ -26,86 +26,86 @@ export default function RelatedProducts() {
         }
     }, []);
 
-    const bestProducts = [
-        {
-            href: '#',
-            src: '/assets/images/products/p-10.jpg',
-            alt: 'Australian Large Granny Smith Apples',
-            title: 'Australian Large Granny Smith Apples',
-            price: '$65.60',
-            originalPrice: '$90.00',
-            sold: '270 products',
-            isInStock: true,
-            isOnSale: true,
-        },
-        {
-            href: '#',
-            src: '/assets/images/products/p-1.jpg',
-            alt: '[Sample] Able Brewing System consetetur sadipscing elitr',
-            title: '[Sample] Able Brewing System consetetur sadipscing elitr',
-            price: '$2,000.00',
-            sold: 'Out of Stock',
-            isInStock: false,
-            isOnSale: false,
-        },
-        {
-            href: '#',
-            src: '/assets/images/products/p-11.jpg',
-            alt: 'Organic Red Seedless Grapes',
-            title: 'Organic Red Seedless Grapes',
-            price: '$45.00',
-            originalPrice: '$55.00',
-            sold: '180 products',
-            isInStock: true,
-            isOnSale: true,
-        },
-        {
-            href: '#',
-            src: '/assets/images/products/p-12.jpg',
-            alt: 'Electric Blender Set with Extra Jars',
-            title: 'Electric Blender Set with Extra Jars',
-            price: '$150.00',
-            originalPrice: '$200.00',
-            sold: '320 products',
-            isInStock: true,
-            isOnSale: true,
-        },
-        {
-            href: '#',
-            src: '/assets/images/products/p-13.jpg',
-            alt: 'Organic Bananas - Fresh Bunch',
-            title: 'Organic Bananas - Fresh Bunch',
-            price: '$10.00',
-            originalPrice: '$12.00',
-            sold: '500 products',
-            isInStock: true,
-            isOnSale: false,
-        },
-        {
-            href: '#',
-            src: '/assets/images/products/p-14.jpg',
-            alt: 'Non-stick Frying Pan with Heat-resistant Handle',
-            title: 'Non-stick Frying Pan with Heat-resistant Handle',
-            price: '$30.00',
-            originalPrice: '$45.00',
-            sold: '120 products',
-            isInStock: true,
-            isOnSale: true,
-        },
-        {
-            href: '#',
-            src: '/assets/images/products/p-15.jpg',
-            alt: 'Elegant Ceramic Tea Pot',
-            title: 'Elegant Ceramic Tea Pot',
-            price: '$25.00',
-            originalPrice: '$30.00',
-            sold: '250 products',
-            isInStock: true,
-            isOnSale: false,
-        },
-    ];
+    // const bestProducts = [
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-10.jpg',
+    //         alt: 'Australian Large Granny Smith Apples',
+    //         title: 'Australian Large Granny Smith Apples',
+    //         price: '$65.60',
+    //         originalPrice: '$90.00',
+    //         sold: '270 products',
+    //         isInStock: true,
+    //         isOnSale: true,
+    //     },
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-1.jpg',
+    //         alt: '[Sample] Able Brewing System consetetur sadipscing elitr',
+    //         title: '[Sample] Able Brewing System consetetur sadipscing elitr',
+    //         price: '$2,000.00',
+    //         sold: 'Out of Stock',
+    //         isInStock: false,
+    //         isOnSale: false,
+    //     },
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-11.jpg',
+    //         alt: 'Organic Red Seedless Grapes',
+    //         title: 'Organic Red Seedless Grapes',
+    //         price: '$45.00',
+    //         originalPrice: '$55.00',
+    //         sold: '180 products',
+    //         isInStock: true,
+    //         isOnSale: true,
+    //     },
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-12.jpg',
+    //         alt: 'Electric Blender Set with Extra Jars',
+    //         title: 'Electric Blender Set with Extra Jars',
+    //         price: '$150.00',
+    //         originalPrice: '$200.00',
+    //         sold: '320 products',
+    //         isInStock: true,
+    //         isOnSale: true,
+    //     },
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-13.jpg',
+    //         alt: 'Organic Bananas - Fresh Bunch',
+    //         title: 'Organic Bananas - Fresh Bunch',
+    //         price: '$10.00',
+    //         originalPrice: '$12.00',
+    //         sold: '500 products',
+    //         isInStock: true,
+    //         isOnSale: false,
+    //     },
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-14.jpg',
+    //         alt: 'Non-stick Frying Pan with Heat-resistant Handle',
+    //         title: 'Non-stick Frying Pan with Heat-resistant Handle',
+    //         price: '$30.00',
+    //         originalPrice: '$45.00',
+    //         sold: '120 products',
+    //         isInStock: true,
+    //         isOnSale: true,
+    //     },
+    //     {
+    //         href: '#',
+    //         src: '/assets/images/products/p-15.jpg',
+    //         alt: 'Elegant Ceramic Tea Pot',
+    //         title: 'Elegant Ceramic Tea Pot',
+    //         price: '$25.00',
+    //         originalPrice: '$30.00',
+    //         sold: '250 products',
+    //         isInStock: true,
+    //         isOnSale: false,
+    //     },
+    // ];
 
-
+    const bestProducts = products.slice(0,8);
 
 
 
