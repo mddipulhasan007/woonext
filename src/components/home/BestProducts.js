@@ -108,7 +108,8 @@ export default function BestProductsCarousel({products}) {
         },
     ];
 
-
+    // Limit products to show only the first 8
+    const displayedProducts = products.slice(10, 18);
 
 
 
@@ -150,7 +151,7 @@ export default function BestProductsCarousel({products}) {
                             }
                         }
                     >
-                        {products.map((product, index) => (
+                        {displayedProducts.map((product, index) => (
                             <SwiperSlide key={index} style={{width: "224.25px", marginRight: 6}}>
                                 <ProductCard product={product}/>
                             </SwiperSlide>

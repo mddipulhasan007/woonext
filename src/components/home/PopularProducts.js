@@ -26,112 +26,7 @@ export default function PopularProductsCarousel({products}) {
         }
     }, []);
 
-    const popularProducts = [
-        {
-            id: 1,
-            title: "[Sample] Able Brewing System consetetur",
-            category: "Common Good",
-            price: "$2,000.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-1.jpg",
-            link: "#",
-            buttonLabel: "Add to Cart"
-        },
-        {
-            id: 2,
-            title: "[Sample] Tiered Wire Basket consetetur sadipscing elitr",
-            category: "Common Good",
-            price: "$5.00 - $15.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-2.jpg",
-            link: "#",
-            buttonLabel: "Product Details"
-        },
-        {
-            id: 1,
-            title: "[Sample] Able Brewing System consetetur",
-            category: "Common Good",
-            price: "$2,000.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-1.jpg",
-            link: "#",
-            buttonLabel: "Add to Cart"
-        },
-        {
-            id: 2,
-            title: "[Sample] Tiered Wire Basket consetetur sadipscing elitr",
-            category: "Common Good",
-            price: "$5.00 - $15.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-2.jpg",
-            link: "#",
-            buttonLabel: "Product Details"
-        },
-        {
-            id: 3,
-            title: "Fog Linen Chambray Towel - Beige Stripe",
-            category: "1 Bag",
-            price: "$5.00 - $15.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-3.jpg",
-            link: "#",
-            buttonLabel: "Product Details"
-        },
-        {
-            id: 4,
-            title: "Chemex Coffeemaker 3 Cup consetetur sadipscing",
-            category: "1 each",
-            price: "$5.00 - $15.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-4.jpg",
-            link: "#",
-            buttonLabel: "Product Details"
-        },
-        {
-            id: 5,
-            title: "Chester's Fries Flamen Hot Corn Potato Snacks",
-            category: "1 each",
-            price: "$5.00 - $15.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-5.jpg",
-            link: "#",
-            buttonLabel: "Product Details"
-        },
-        {
-            id: 6,
-            title: "[Sample] Canvas Laundry Cart sed diam nonumy eirmod",
-            category: "1 each",
-            price: "$5.00 - $15.00",
-            rating: 5,
-            reviewCount: 1,
-            stockStatus: "In Stock",
-            stockCount: 70,
-            src: "/assets/images/products/p-6.jpg",
-            link: "#",
-            buttonLabel: "Product Details"
-        }
-    ];
+    const popularProducts = products.slice(20, 28);
 
 
     return (
@@ -171,7 +66,7 @@ export default function PopularProductsCarousel({products}) {
                             }
                         }
                     >
-                        {products.map((product, index) => (
+                        {popularProducts.map((product, index) => (
                             <SwiperSlide key={index} style={{ width: "224.25px", marginRight: 6 }}>
                                 <ProductCard product={product} />
                             </SwiperSlide>

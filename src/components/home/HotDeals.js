@@ -4,7 +4,7 @@ import HotProductCarousel from "@/components/ui/HotDealProductCarousel";
 import Image from "next/image";
 
 function HotDeals({products}) {
-
+    const displayedProducts = products.slice(0, 6);
     return (
         <div className="mb-12 lg:mb-14 navSlider">
             <DealBanner />
@@ -34,7 +34,7 @@ function HotDeals({products}) {
                         />
                     </div>
                 </div>
-                <HotProductCarousel products={products} />
+                <HotProductCarousel products={displayedProducts} />
             </div>
 
         </div>
