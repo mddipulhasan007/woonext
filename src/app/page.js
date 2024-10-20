@@ -5,8 +5,8 @@ import { fetchProducts } from "@/services/api";
 import 'swiper/css';
 import 'swiper/css/navigation';  // Import the navigation styles
 import 'swiper/css/pagination';  // Import the pagination styles
-import fs from 'fs';
-import path from 'path';
+// import fs from 'fs';
+// import path from 'path';
 
 
 export const metadata = {
@@ -18,14 +18,17 @@ export const metadata = {
 const HomePage = async () => {
 
     try {
-        // Resolve the path to the products.json file
-        const filePath = path.join(process.cwd(), 'public', 'data', 'products.json');
+        // // Resolve the path to the products.json file
+        // const filePath = path.join(process.cwd(), 'public', 'data', 'products.json');
+        //
+        // // Read the file content synchronously
+        // const fileContent = fs.readFileSync(filePath, 'utf8');
+        //
+        // // Parse the file content to JSON
+        // const products = JSON.parse(fileContent);
 
-        // Read the file content synchronously
-        const fileContent = fs.readFileSync(filePath, 'utf8');
 
-        // Parse the file content to JSON
-        const products = JSON.parse(fileContent);
+        const products = [];
 
     return (
         <main className="relative flex-grow pt-5 xl:pt-8">

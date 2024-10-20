@@ -1,6 +1,7 @@
 // app/layout.js
 // external
 import "react-toastify/dist/ReactToastify.css";
+import 'react-loading-skeleton/dist/skeleton.css'; // Ensure CSS is imported
 // base css file
 import "@/assets/css/scrollbar.css";
 import "@/assets/css/swiper-carousel.css";
@@ -9,6 +10,7 @@ import "@/assets/css/rc-drawer.css";
 import "@/assets/css/themes.scss";
 import "@/assets/css/google-font.css";
 import "@/app/globals.css";
+
 import ClientProvider from "@/components/ClientProvider";
 
 export default function RootLayout({ children }) {

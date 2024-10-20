@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Skeleton from "react-loading-skeleton";
-import 'react-loading-skeleton/dist/skeleton.css'; // Ensure CSS is imported
+
 
 function ProductNamePrice({ product }) {
     const [minPrice, setMinPrice] = useState(null);

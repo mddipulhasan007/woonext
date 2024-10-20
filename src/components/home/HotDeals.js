@@ -1,10 +1,17 @@
-import React from 'react';
+'use client'
+import React, {useEffect, useState} from 'react';
 import DealBanner from "@/components/ui/DealBanner";
 import HotProductCarousel from "@/components/ui/HotDealProductCarousel";
 import Image from "next/image";
+import Skeleton from "react-loading-skeleton";
+import {axiosInstance} from "@/services/axios";
 
 function HotDeals({products}) {
-    const displayedProducts = products.slice(0, 6);
+
+
+
+//console.log(hotProducts)
+
     return (
         <div className="mb-12 lg:mb-14 navSlider">
             <DealBanner />
@@ -34,7 +41,7 @@ function HotDeals({products}) {
                         />
                     </div>
                 </div>
-                <HotProductCarousel products={displayedProducts} />
+                <HotProductCarousel products={products} />
             </div>
 
         </div>

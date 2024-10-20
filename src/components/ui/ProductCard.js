@@ -8,9 +8,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 function ProductCard({ product }) {
-   console.log(product)
+  // console.log(product)
   return (
     <article
+        id={product.id}
       className="flex flex-col gap-2 product-card relative p-2 sm:p-4 h-full rounded bg-white card-image--jump"
       title={product.title}
     >

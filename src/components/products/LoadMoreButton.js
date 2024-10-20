@@ -2,7 +2,7 @@ import React from 'react';
 
 function LoadMoreButton({ onClick, isLoading }) {
     return (
-        <div className="mt-1.5 py-5 text-center bg-white rounded">
+        <div className="w-full mt-1.5 py-5 text-center bg-white rounded">
             <button
                 data-variant="primary"
                 onClick={onClick}

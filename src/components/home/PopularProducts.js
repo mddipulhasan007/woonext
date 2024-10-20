@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { PrevIcon, NextIcon } from '@/components/icons/NavigationIcons';
 import ProductCard from "@/components/ui/ProductCard";
 import SwiperNavigation from "@/components/ui/SwiperNavigation";
+import Skeleton from "react-loading-skeleton";
 
 export default function PopularProductsCarousel({products}) {
     const prevRef = useRef(null);
@@ -66,11 +67,27 @@ export default function PopularProductsCarousel({products}) {
                             }
                         }
                     >
-                        {popularProducts.map((product, index) => (
-                            <SwiperSlide key={index} style={{ width: "224.25px", marginRight: 6 }}>
-                                <ProductCard product={product} />
-                            </SwiperSlide>
-                        ))}
+                        {
+                            products.length > 0 ? (
+                                products.map((product, index) => (
+                                    <SwiperSlide key={index} style={{ width: "224.25px", marginRight: 6 }}>
+                                        <ProductCard product={product} />
+                                    </SwiperSlide>
+                                ))
+                            ) : (
+                                // Render Skeleton when hotProducts.length is 0
+                                Array.from({ length: 6 }).map((_, index) => (
+                                    <SwiperSlide key={index} style={{ width: "224.25px", marginRight: 6 }}>
+                                        <div style={{ padding: '0rem' }}>
+                                            <Skeleton width={224} height={300} />
+                                            <Skeleton width={224} height={40} style={{ marginTop: '1rem' }} />
+                                            <Skeleton width={224} height={30} style={{ marginTop: '0.5rem' }} />
+                                        </div>
+                                    </SwiperSlide>
+                                ))
+                            )
+                        }
+
                     </Swiper>
                     <SwiperNavigation prevRef={prevRef} nextRef={nextRef} />
                 </div>
