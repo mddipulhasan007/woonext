@@ -40,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({className, lang}) => {
     const siteSearchRef = useRef() as DivElementRef;
     const {t} = useTranslation(lang, 'common');
     const siteHeaderRef = useRef() as DivElementRef;
-    const [categoryMenu, setCategoryMenu] = useState(Boolean(false));
+    const [categoryMenu, setCategoryMenu] = useState(Boolean(true));
     useActiveScroll(siteHeaderRef);
     
     function handleLogin() {
@@ -208,7 +208,7 @@ const Header: React.FC<HeaderProps> = ({className, lang}) => {
             </header>
             {categoryMenu && (
                 <div
-                    className="shadow_bkg_show fixed w-full h-full inset-0 bg-black/60 z-40"
+                    // className="shadow_bkg_show fixed w-full h-full inset-0 bg-black/60 z-40"
                     onClick={handleCategoryMenu}
                 ></div>
             )}

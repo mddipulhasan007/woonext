@@ -30,8 +30,8 @@ export default async function Page({params: {lang},}: { params: { lang: string; 
         <>
             <Container >
                 <div className={"grid gap-4 grid-cols-1 xl:gap-5 xl:grid-cols-[270px_1fr] mb-7"}>
-                    <div className={"hidden xl:block bg-white rounded relative h-auto "}>
-                        <CategoryDropdownMenu lang={lang} categoriesLimit={10}/>
+                    <div className={"hidden xl:block bg-slate-400 relative h-auto "}>
+                        {/* <CategoryDropdownMenu lang={lang} categoriesLimit={10}/> */}
                     </div>
                     
                     <div className={"grid gap-1.5 grid-cols-1"}>

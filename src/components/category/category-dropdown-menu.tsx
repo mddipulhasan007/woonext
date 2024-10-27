@@ -25,7 +25,7 @@ export default function CategoryDropdownMenu({
     });
     
     return (
-        <div className={cn('absolute z-30 w-72 lg:w-full', className)}>
+        <div className={cn('absolute z-30 w-72 lg:w-full ', className)}>
             <div className="max-h-full">
                 {error ? (
                     <div className="2xl:ltr:pr-4 2xl:rtl:pl-4">
